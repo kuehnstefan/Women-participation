@@ -1,0 +1,1078 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.11)  30 JAN 2018 18:19
+entering extended mode
+**"./womens participation.tex"
+("womens participation.tex"
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+(C:\Software\MikTexPortable\tex\latex\base\article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(C:\Software\MikTexPortable\tex\latex\base\size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\Software\MikTexPortable\tex\latex\base\inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(C:\Software\MikTexPortable\tex\latex\base\latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(C:\Software\MikTexPortable\tex\latex\amsmath\amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(C:\Software\MikTexPortable\tex\latex\amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(C:\Software\MikTexPortable\tex\latex\amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen103
+))
+(C:\Software\MikTexPortable\tex\latex\amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(C:\Software\MikTexPortable\tex\latex\amsmath\amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks17
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks18
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(C:\Software\MikTexPortable\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(C:\Software\MikTexPortable\tex\latex\amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(C:\Software\MikTexPortable\tex\latex\graphics\graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Software\MikTexPortable\tex\latex\graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(C:\Software\MikTexPortable\tex\latex\graphics\graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Software\MikTexPortable\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(C:\Software\MikTexPortable\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(C:\Software\MikTexPortable\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(C:\Software\MikTexPortable\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(C:\Software\MikTexPortable\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(C:\Software\MikTexPortable\tex\latex\tabulary\tabulary.sty
+Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
+
+(C:\Software\MikTexPortable\tex\latex\tools\array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen114
+\extrarowheight=\dimen115
+\NC@list=\toks22
+\extratabsurround=\skip46
+\backup@length=\skip47
+)
+\TY@count=\count100
+\TY@linewidth=\dimen116
+\tymin=\dimen117
+\tymax=\dimen118
+\TY@tablewidth=\dimen119
+)
+(C:\Software\MikTexPortable\tex\latex\multirow\multirow.sty
+\bigstrutjot=\dimen120
+)
+(C:\Software\MikTexPortable\tex\latex\setspace\setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(C:\Software\MikTexPortable\tex\latex\booktabs\booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen121
+\lightrulewidth=\dimen122
+\cmidrulewidth=\dimen123
+\belowrulesep=\dimen124
+\belowbottomsep=\dimen125
+\aboverulesep=\dimen126
+\abovetopsep=\dimen127
+\cmidrulesep=\dimen128
+\cmidrulekern=\dimen129
+\defaultaddspace=\dimen130
+\@cmidla=\count101
+\@cmidlb=\count102
+\@aboverulesep=\dimen131
+\@belowrulesep=\dimen132
+\@thisruleclass=\count103
+\@lastruleclass=\count104
+\@thisrulewidth=\dimen133
+)
+(C:\Software\MikTexPortable\tex\latex\tools\longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip48
+\LTright=\skip49
+\LTpre=\skip50
+\LTpost=\skip51
+\LTchunksize=\count105
+\LTcapwidth=\dimen134
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count106
+\LT@rows=\count107
+\c@LT@tables=\count108
+\c@LT@chunks=\count109
+\LT@p@ftn=\toks23
+)
+(C:\Software\MikTexPortable\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count110
+)
+(C:\Software\MikTexPortable\tex\latex\csquotes\csquotes.sty
+Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
+
+(C:\Software\MikTexPortable\tex\latex\etoolbox\etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count111
+)
+\csq@reset=\count112
+\csq@gtype=\count113
+\csq@glevel=\count114
+\csq@qlevel=\count115
+\csq@maxlvl=\count116
+\csq@tshold=\count117
+\csq@ltx@everypar=\toks24
+
+(C:\Software\MikTexPortable\tex\latex\csquotes\csquotes.def
+File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(C:\Software\MikTexPortable\tex\latex\csquotes\csquotes.cfg
+File: csquotes.cfg 
+))
+(C:\Software\MikTexPortable\tex\latex\geometry\geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(C:\Software\MikTexPortable\tex\generic\oberdiek\ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(C:\Software\MikTexPortable\tex\generic\oberdiek\ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(C:\Software\MikTexPortable\tex\generic\ifxetex\ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks25
+
+(C:\Software\MikTexPortable\tex\latex\geometry\geometry.cfg))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+("womens participation.aux")
+\openout1 = `"womens participation.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+
+(C:\Software\MikTexPortable\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count121
+\scratchdimen=\dimen143
+\scratchbox=\box32
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count124
+\MPscratchDim=\dimen144
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks27
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(90.3375pt, 416.83289pt, 90.3375pt)
+* v-part:(T,H,B)=(72.26999pt, 682.43936pt, 90.3375pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=682.43936pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+(C:\Software\MikTexPortable\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+
+(C:\Software\MikTexPortable\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 28.
+
+(C:\Software\MikTexPortable\tex\latex\base\omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 28.
+
+(Sections/sec_introduction.tex [1
+
+{C:/Software/MikTexPortable/pdftex/config/pdftex.map}]) (Sections/sec_framework
+.tex [2]
+<Figures/framework_1.jpg, id=18, 884.55469pt x 599.99156pt>
+File: Figures/framework_1.jpg Graphic file (type jpg)
+
+<use Figures/framework_1.jpg>
+Package pdftex.def Info: Figures/framework_1.jpg used on input line 7.
+(pdftex.def)             Requested size: 341.43867pt x 231.59712pt.
+ [3 <./Figures/framework_1.jpg>])
+(Sections/sec_data.tex [4] (Sections/table_vardescription.tex
+Overfull \hbox (37.60631pt too wide) in alignment at lines 2--8
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.60631pt too wide) in alignment at lines 8--13
+ [] [] [] 
+ []
+
+
+Overfull \hbox (37.60631pt too wide) in alignment at lines 13--15
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|$\OML/cmm/m/it/10 INT$\OT1/cmr/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+$\OML/cmm/m/it/10 PHO$\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (37.60631pt too wide) in alignment at lines 15--44
+ [] [] [] 
+ []
+
+
+Overfull \vbox (29.11194pt too high) detected at line 45
+ []
+
+
+Overfull \vbox (14.55597pt too high) detected at line 59
+ []
+
+
+Overfull \hbox (6.64828pt too wide) in paragraph at lines 63--64
+[]|\OT1/cmr/m/n/10 unfair treat-ment at work/abuse/harassment/discrimination| 
+ []
+
+
+Overfull \hbox (37.60631pt too wide) in alignment at lines 44--70
+ [] [] [] 
+ []
+
+[5]) [6]) (Sections/sec_methodology.tex [7] [8] [9]) (Sections/sec_results.tex
+
+LaTeX Warning: Reference `table:coeffs' on page 10 undefined on input line 2.
+
+[10] <Figures/uncond_margins.jpg, id=49, 438.8897pt x 616.55344pt>
+File: Figures/uncond_margins.jpg Graphic file (type jpg)
+
+<use Figures/uncond_margins.jpg>
+Package pdftex.def Info: Figures/uncond_margins.jpg used on input line 15.
+(pdftex.def)             Requested size: 199.17276pt x 279.79843pt.
+ [11 <./Figures/uncond_margins.jpg>]
+<Figures/socioecon.jpg, id=53, 804.00375pt x 444.15938pt>
+File: Figures/socioecon.jpg Graphic file (type jpg)
+
+<use Figures/socioecon.jpg>
+Package pdftex.def Info: Figures/socioecon.jpg used on input line 29.
+(pdftex.def)             Requested size: 341.43332pt x 188.61952pt.
+ [12 <./Figures/socioecon.jpg>]
+<Figures/challenges.jpg, id=57, 861.9703pt x 405.01312pt>
+File: Figures/challenges.jpg Graphic file (type jpg)
+
+<use Figures/challenges.jpg>
+Package pdftex.def Info: Figures/challenges.jpg used on input line 39.
+(pdftex.def)             Requested size: 398.35251pt x 187.17348pt.
+
+<Figures/relationship.jpg, id=58, 804.00375pt x 459.96844pt>
+File: Figures/relationship.jpg Graphic file (type jpg)
+
+<use Figures/relationship.jpg>
+Package pdftex.def Info: Figures/relationship.jpg used on input line 48.
+(pdftex.def)             Requested size: 341.43332pt x 195.3331pt.
+ [13 <./Figures/challenges.jpg>]
+<Figures/education.jpg, id=63, 779.91376pt x 438.13687pt>
+File: Figures/education.jpg Graphic file (type jpg)
+
+<use Figures/education.jpg>
+Package pdftex.def Info: Figures/education.jpg used on input line 59.
+(pdftex.def)             Requested size: 341.42564pt x 191.80473pt.
+
+<Figures/education_2.jpg, id=64, 793.46437pt x 441.14813pt>
+File: Figures/education_2.jpg Graphic file (type jpg)
+
+<use Figures/education_2.jpg>
+Package pdftex.def Info: Figures/education_2.jpg used on input line 66.
+(pdftex.def)             Requested size: 341.43729pt x 189.83134pt.
+ [14 <./Figures/relationship.jpg> <./Figures/education.jpg>]) (Sections/sec_con
+clusion.tex) ("womens participation.bbl" [15 <./Figures/education_2.jpg>]) (Sec
+tions/sec_appendix.tex
+(Sections/Coefficients_1.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 ...mallskip}\hline \noalign{\smallskip}1.pref_
+                                                  work & -0.29 & -0.26 & 0.1...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.4 ...ip}\hline \noalign{\smallskip}1.pref_work &
+                                                   -0.29 & -0.26 & 0.12 & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 \noalign{\smallskip}1bn.pref_
+                                  opport & 0.06 & -0.15 & 0.10 & 0.02 & 0.41...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.24 \noalign{\smallskip}1bn.pref_opport &
+                                           0.06 & -0.15 & 0.10 & 0.02 & 0.41...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 \noalign{\smallskip}3.pref_
+                                opport & 0.07 & -0.04 & -0.11 & 0.10 & 0.02 ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 \noalign{\smallskip}3.pref_opport &
+                                         0.07 & -0.04 & -0.11 & 0.10 & 0.02 ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 \noalign{\smallskip}4.pref_
+                                opport & 0.05 & -0.13 & -0.07 & -0.07 & 0.13...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 \noalign{\smallskip}4.pref_opport &
+                                         0.05 & -0.13 & -0.07 & -0.07 & 0.13...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.54 \noalign{\smallskip}1.pref_
+                                accept & 0.17 & 0.01 & 0.00 & 0.05 & 0.13 & ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.54 \noalign{\smallskip}1.pref_accept &
+                                         0.17 & 0.01 & 0.00 & 0.05 & 0.13 & ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.64 \noalign{\smallskip}1.pref_
+                                work\#1.urban & 0.52 &  &  &  &  & 0.14 & 0....
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.64 \noalign{\smallskip}1.pref_work\#1.urban &
+                                                0.52 &  &  &  &  & 0.14 & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.66 \noalign{\smallskip}1.pref_
+                                work\#c.laworder & 0.56 &  &  & 0.57 &  &  &...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.66 \noalign{\smallskip}1.pref_work\#c.laworder &
+                                                   0.56 &  &  & 0.57 &  &  &...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.68 \noalign{\smallskip}1.pref_
+                                work\#1.comm &  & 0.64 &  &  & 0.39 &  &  & ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.68 \noalign{\smallskip}1.pref_work\#1.comm &
+                                                & 0.64 &  &  & 0.39 &  &  & ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 \noalign{\smallskip}1.pref_
+                                work\#c.jobclimate &  &  & 0.32 &  &  &  &  ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 ...ign{\smallskip}1.pref_work\#c.jobclimate &
+                                                    &  & 0.32 &  &  &  &  & ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 \noalign{\smallskip}1.pref_
+                                work\#2bn.educ &  &  & -0.05 &  &  &  &  & 0...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 \noalign{\smallskip}1.pref_work\#2bn.educ &
+                                                  &  & -0.05 &  &  &  &  & 0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74 \noalign{\smallskip}1.pref_
+                                work\#3.educ &  &  & 0.54 &  &  &  &  & 0.37...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.74 \noalign{\smallskip}1.pref_work\#3.educ &
+                                                &  & 0.54 &  &  &  &  & 0.37...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 \noalign{\smallskip}1.pref_
+                                work\#1.poor &  &  & 0.26 &  & -0.44 & -0.14...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.76 \noalign{\smallskip}1.pref_work\#1.poor &
+                                                &  & 0.26 &  & -0.44 & -0.14...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.78 \noalign{\smallskip}1.pref_
+                                work\#2bn.challenge &  &  &  & -0.18 &  &  &...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.78 ...gn{\smallskip}1.pref_work\#2bn.challenge &
+                                                    &  &  & -0.18 &  &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 \noalign{\smallskip}1.pref_
+                                work\#3.challenge &  &  &  & -0.59 &  &  & -...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 ...lign{\smallskip}1.pref_work\#3.challenge &
+                                                    &  &  & -0.59 &  &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 \noalign{\smallskip}1.pref_
+                                work\#4.challenge &  &  &  & -0.46 &  &  & 0...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 ...lign{\smallskip}1.pref_work\#4.challenge &
+                                                    &  &  & -0.46 &  &  & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.84 \noalign{\smallskip}1.pref_
+                                work\#5.challenge &  &  &  & -0.52 &  &  & -...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.84 ...lign{\smallskip}1.pref_work\#5.challenge &
+                                                    &  &  & -0.52 &  &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.86 \noalign{\smallskip}1.pref_
+                                work\#6.challenge &  &  &  & -0.54 &  &  & 0...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.86 ...lign{\smallskip}1.pref_work\#6.challenge &
+                                                    &  &  & -0.54 &  &  & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 \noalign{\smallskip}1.pref_
+                                work\#7.challenge &  &  &  & -1.33 &  &  & -...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 ...lign{\smallskip}1.pref_work\#7.challenge &
+                                                    &  &  & -1.33 &  &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 \noalign{\smallskip}1.pref_
+                                work\#8.challenge &  &  &  & 0.22 &  &  & 0....
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.90 ...lign{\smallskip}1.pref_work\#8.challenge &
+                                                    &  &  & 0.22 &  &  & 0.3...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.92 \noalign{\smallskip}1.pref_
+                                work\#9.challenge &  &  &  & -0.91 &  &  & -...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.92 ...lign{\smallskip}1.pref_work\#9.challenge &
+                                                    &  &  & -0.91 &  &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 \noalign{\smallskip}1.pref_
+                                work\#10.challenge &  &  &  & -0.63 &  &  & ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 ...ign{\smallskip}1.pref_work\#10.challenge &
+                                                    &  &  & -0.63 &  &  & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.96 \noalign{\smallskip}1.pref_
+                                work\#97.challenge &  &  &  & -0.42 &  &  & ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.96 ...ign{\smallskip}1.pref_work\#97.challenge &
+                                                    &  &  & -0.42 &  &  & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.98 \noalign{\smallskip}1.pref_
+                                work\#98.challenge &  &  &  & -0.25 &  &  & ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.98 ...ign{\smallskip}1.pref_work\#98.challenge &
+                                                    &  &  & -0.25 &  &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.100 \noalign{\smallskip}1.pref_
+                                 work\#1.roads &  &  &  & 0.32 & 0.21 &  &  ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.100 \noalign{\smallskip}1.pref_work\#1.roads &
+                                                  &  &  & 0.32 & 0.21 &  &  ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.102 \noalign{\smallskip}1.pref_
+                                 work\#c.housenum &  &  &  &  & 0.12 &  & 0....
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.102 ...lign{\smallskip}1.pref_work\#c.housenum &
+                                                    &  &  &  & 0.12 &  & 0.3...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.104 \noalign{\smallskip}1.pref_
+                                 work\#c.housenum\#c.housenum &  &  &  &  & ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.104 ...kip}1.pref_work\#c.housenum\#c.housenum &
+                                                    &  &  &  & -0.01 &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.106 \noalign{\smallskip}1.pref_
+                                 work\#1.married &  &  &  &  & 0.22 &  & -0....
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.106 \noalign{\smallskip}1.pref_work\#1.married &
+                                                    &  &  &  & 0.22 &  & -0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 \noalign{\smallskip}1.pref_
+                                 work\#1bn.pref_opport &  &  &  &  & -0.40 &...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.108 ...\smallskip}1.pref_work\#1bn.pref_opport &
+                                                    &  &  &  & -0.40 &  & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.110 \noalign{\smallskip}1.pref_
+                                 work\#3.pref_opport &  &  &  &  & -0.10 &  ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.110 ...n{\smallskip}1.pref_work\#3.pref_opport &
+                                                    &  &  &  & -0.10 &  & 0....
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 \noalign{\smallskip}1.pref_
+                                 work\#4.pref_opport &  &  &  &  & -0.16 &  ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.112 ...n{\smallskip}1.pref_work\#4.pref_opport &
+                                                    &  &  &  & -0.16 &  & -0...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.114 \noalign{\smallskip}1.pref_
+                                 work\#1.islam &  &  &  &  &  & 0.15 & -0.43...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.114 \noalign{\smallskip}1.pref_work\#1.islam &
+                                                  &  &  &  &  & 0.15 & -0.43...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (223.54205pt too wide) in paragraph at lines 2--117
+ [] 
+ []
+
+[16]
+Overfull \vbox (1152.63937pt too high) has occurred while \output is active []
+
+
+[17])) ("womens participation.aux")
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4166 strings out of 493634
+ 55428 string characters out of 3144220
+ 178471 words of memory out of 3000000
+ 7448 multiletter control sequences out of 15000+200000
+ 15110 words of font info for 59 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 29i,11n,24p,1734b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Software/MikTexPortable/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Sof
+tware/MikTexPortable/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Software/Mik
+TexPortable/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Software/MikTexPortab
+le/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Software/MikTexPortable/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><C:/Software/MikTexPortable/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb><C:/Software/MikTexPortable/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><C:/Software/MikTexPortable/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><C:/Software/MikTexPortable/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/So
+ftware/MikTexPortable/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Software/MikT
+exPortable/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Software/MikTexPortabl
+e/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Software/MikTexPortable/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb><C:/Software/MikTexPortable/fonts/type1/public
+/amsfonts/cm/cmti10.pfb><C:/Software/MikTexPortable/fonts/type1/public/amsfonts
+/cm/cmtt12.pfb>
+Output written on "womens participation.pdf" (17 pages, 705553 bytes).
+PDF statistics:
+ 124 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+

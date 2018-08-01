@@ -1,0 +1,57 @@
+\section{Empirical methodology}\label{sec:methodology}
+
+The aim of the empirical analysis is to find relevant  factors explaining women's labour force participation, and to compare their impact across different groups of women identified by the research questions at hand. The  variables available for analysis have been described in the previous section.
+
+\subsection{Econometric model}
+The variable of interest, labour market participation, is a binary variable. The econometric model of choice in such a case is to estimate the probability of a woman to participate in the labour market, depending on explanatory variables, using a probit specification. 
+
+In such a model, the probability of a woman to participate, $Pr(P=1)$, depending on a set of explanatory variables $X$, is modelled using the cumulative distribution function of the standard normal distribution ($\Phi()$). 
+\begin{equation}\label{eq:estimation}
+Pr(P=1|X) =\Phi\left(X^T \beta \right)
+\end{equation}
+This function is bound between zero and one and is solved using maximum likelihood techniques.
+
+The theoretical framework established that the fundamental drivers of labour market outcomes are in fact also shaped by the labour market outcomes themselves. This means that the explanatory variables are endogenous to the outcome, so that  causality cannot be established easily. Additionally, the availability of data, having only one observation per subject, implies that this paper can only establish correlations, but not causality. Nevertheless, the analysis provides important insights into the differences in characteristics between women participating in the labour market and those that don't.
+
+The key issue for the analysis lies in specifying a matrix of independent variables $X$ that best correlates the individual probability to participate in the labour market. The dataset at hand contains around 500 observations of individual women per country, from many countries, for a large range of explanatory variables, but for only one point in time. However, table~\ref{tab:vardescription} shows that there are already around 30 variables of interest, when counting the various levels of dummy variables. Additionally, there is strong reason to split the sample by age group, or estimate an interaction term, strongly reducing the number of observations per estimated variable at the country level. 
+
+Consequently, this paper opts to pool countries in the analysis. This has the additional advantage that it allows making more general statements, as the analysis of over 100 country estimates becomes intractable. Due to the absence of sufficient information that would explain cross-country differences in mean participation rates, country fixed effects are introduced to capture these. 
+
+The estimation takes into account of sampling weights, clustering, and stratification of the survey design to most accurately compute the standard errors. The population weights of the survey are applied as the sampling weights to achieve the point estimates correctly without bias. Stratification based on the sampling of each country separate from other countries provides smaller standard errors for the overall sample size.  Clustering accounts each individual as the primary sampling unit.
+
+As in any estimation, coefficient estimates represent the relationship between that explanatory variable and the dependent variable under the assumption that the relationship is the same for all individual observations. For this paper this means that when pooling all countries and age groups, the assumption would be that the relationship between the presence of children and participation in the labour market is assumed to be the same for all. This of course is a too strong assumption, which is why the paper introduces interaction terms along two dimensions in the estimation.
+
+The first dimension interacts multiple fundamental drivers, where the assumption is that the presence of one driver also affects the impact of another one. Based on the theoretical model, there is a strong indication that the personal preference to participate in the labour market is shaped by the socio-cultural environment of an individual, and hence could also be proxy for how other fundamental drivers impact the probability to participate. Hence, the personal preference is used as an interaction term. A number of interaction terms are tested, and kept for further analysis when they prove to be significant.
+
+The second dimension effectively splits the sample into groups where based on theoretical considerations as well as previous literature differences in the size of estimated coefficients are to be expected. These groups are discussed in the following section.
+
+\subsection{Sub-groups of the sample}
+In accordance with the life cycle theory, age is the first category of distinction. Specifically, women are divided into three categories: young (aged 15-24), prime age (aged 25-54) and old (aged 55+). These categories follow the definition of the ILO, although some countries or authors would consider persons up to 29 as young. However, by the age of 25 most women have completed all education, and hence should be considered prime age for the purposes of this paper. While it would be possible to introduce age as a continuous function, testing has shown that results are much better and more interesting when introducing as a categorical variable. It seems that there are real discontinuities in the labour market performance over a woman's life cycle.
+
+The second category distinguishes country groups, under the assumptions that fundamental drivers work differently in countries with very different characteristics. For example, the presence of children would have a different effect in countries with well-established child care facilities than in countries without these. However, at the global level of the analysis only little information is available for all countries. 
+
+This paper uses the GDP per capita and the gender gap in labour force participation rates as grouping variables. The first country group comprises low income countries according to the World Bank classification. Women and men in low income countries have very large participation rates, mostly because they have to work out of necessity. Hence, we expect women in those countries to have a different behaviour. 
+
+The remaining middle and high income countries are divided into two groups according to whether they have a low or high gender gap. The hypothesis is that determinants of participation work differently in high-gap countries than in low-gap countries. To make the distinction, in a first step the aggregate female labour force participation rate, obtained from labour-force survey based estimates, is regressed on the male participation rate, as well as the GDP per capita, and its square term. The residuals of this regression are used to determine whether a country has a lower or higher female participation rate, and hence a higher or lower gap, than predicted. This procedure does not create endogeneity, since it only makes use of a country-level statistic, which are captured by the country fixed effect. In essence, the dummy on high or low participation shifts the common difference in country average participation probability observed in the Gallup dataset from the country fixed effect onto the group dummy. Additionally, it allows coefficients to differ between groups.
+
+Another option for classification is to make use of the country aggregated opinion of how men see the role of women in the labour market, which has also been collected by the Gallup survey. While this information cannot be matched to individual women, it nevertheless provides information at the country level. Again, countries are grouped into ones where men are rather supportive, and ones where they are less supportive of women participating in the labour market.
+
+Finally, for higher income countries information on the extent of the welfare state is available, which can hence also be used.
+
+The difficulty with creating country groups based on some indicator is to find the threshold level. One option is to use the mean or median across all countries, but this does not necessarily maximize the difference in estimated coefficients. Consequently, the threshold should ideally be estimated endogenously.
+
+\subsection{Model estimation}
+This section describes the model that is estimated for the analysis. As described above, interaction terms are tested for significance, using the contrast option, to identify the once that significantly differentiate groups. The following vector of independent variables, shown in table~\ref{tab:data_descr}, is therefore established for estimation in the probit model:
+\begin{align}
+X &= PW_i (RE_i + AW_i + PV_i + UR_i + OP_i + ED_i + CO_i + LO_i + RD_i)\nonumber\\
+&+ AG_i(PW_i + UR_I + OP_I + CH_I + LO_I + JC_I)\nonumber\\
+& + CG_i (PW_i + OP_i + JC_i) \nonumber\\
+& + CG_i AG_i (HM^2_i+RE_i+ED_i+CD_i+PV_i+IT_i+PH_i)\nonumber\\
+& +AG_i + \varepsilon_c + \varepsilon_i \label{eq:specification}
+\end{align}
+The first line of explanatory variables are the ones that are interacted with the preference to work. As discussed before, the expressed preference to work is also an indicator of the socio-cultural environment of a woman, and hence could have an impact on how other drivers affect the participation rate. The second line shows the drivers that are interacted with the age group, and hence that are hypothesized to change by age. The third line shows drivers that are interacted with the country group, while in the fourth line drivers are interacted with both the age and the country group. The fifth line specifies that each age group has its own intercept, as well as a country fixed effect and the individual error term. Specifying the country group as an intercept is unnecessary as there are already country-ficed effects.
+
+The specification in \eqref{eq:specification} shows that age group is interacted with all variables, as well as with the intercept, meaning that it is in fact very similar to estimating regressions seperately for each age group. However, the current specification allows to estimate the significance of differences in coefficients across age groups. 
+
+Extensive testing has revealed that there is no systematic difference between different religions in terms of the probability to participate, except for Muslim women. Consequently, religion in the model is coded as either Islamic or any other option.
+

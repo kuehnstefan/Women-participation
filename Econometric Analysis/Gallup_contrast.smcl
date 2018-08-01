@@ -1,0 +1,409 @@
+{smcl}
+{txt}{sf}{ul off}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}I:\COMMON\Stefan\Papers\Womans participation\Econometric Analysis\Gallup_contrast.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Oct 2017, 18:05:14
+{txt}
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\yoons\AppData\Local\Temp\STD0f000000.tmp"
+{txt}
+{com}. contrast rb1.smartcat#r.agecat#(educ), effects
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 34}{c TT}{hline 11}{hline 12}{hline 11}
+{col 35}{text}{c |}         df{col 47}           F{col 59}        P>F
+{col 1}{text}{hline 34}{c +}{hline 11}{hline 12}{hline 11}
+{space 13}smartcat#agecat#educ {c |}
+{space 1}(Low gap vs Developing country)  {c |}
+(Age 15-24 vs Age 25-54) (joint)  {col 35}{text}{c |}{result}{space 2}        2{col 47}{space 3}    14.77{col 59}{space 2}   0.0000
+{txt}{space 1}(Low gap vs Developing country)  {c |}
+{space 2}(Age 55+ vs Age 25-54) (joint)  {col 35}{text}{c |}{result}{space 2}        2{col 47}{space 3}     5.32{col 59}{space 2}   0.0049
+{txt}(High gap vs Developing country)  {c |}
+(Age 15-24 vs Age 25-54) (joint)  {col 35}{text}{c |}{result}{space 2}        2{col 47}{space 3}    17.00{col 59}{space 2}   0.0000
+{txt}(High gap vs Developing country)  {c |}
+{space 2}(Age 55+ vs Age 25-54) (joint)  {col 35}{text}{c |}{result}{space 2}        2{col 47}{space 3}     4.57{col 59}{space 2}   0.0104
+{col 1}{text}                           Joint {col 35}{c |}{result}{space 2}        8{col 47}{space 3}     8.88{col 59}{space 2}   0.0000
+{col 1}{text}                           Design{col 35}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 34}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 69}Note: F statistics are adjusted for the survey design.{p_end}
+
+{res}{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}   Contrast{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}smartcat#{c |}
+{space 1}agecat#educ {c |}
+{space 3}(Low gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 1}(Age 15-24  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Secondar..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2} .5031181{col 26}{space 2}  .103166{col 37}{space 1}    4.88{col 46}{space 3}0.000{col 54}{space 4} .3009122{col 67}{space 3} .7053241
+{txt}{space 3}(Low gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 1}(Age 15-24  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Tertiary..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2} 1.146591{col 26}{space 2} .3518966{col 37}{space 1}    3.26{col 46}{space 3}0.001{col 54}{space 4} .4568714{col 67}{space 3}  1.83631
+{txt}{space 3}(Low gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 3}(Age 55+  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Secondar..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2}-.6285307{col 26}{space 2} .2199733{col 37}{space 1}   -2.86{col 46}{space 3}0.004{col 54}{space 4} -1.05968{col 67}{space 3}-.1973817
+{txt}{space 3}(Low gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 3}(Age 55+  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Tertiary..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2} .7599401{col 26}{space 2}  .540717{col 37}{space 1}    1.41{col 46}{space 3}0.160{col 54}{space 4}-.2998684{col 67}{space 3} 1.819749
+{txt}{space 2}(High gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 1}(Age 15-24  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Secondar..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2} .6052496{col 26}{space 2} .1097053{col 37}{space 1}    5.52{col 46}{space 3}0.000{col 54}{space 4} .3902266{col 67}{space 3} .8202725
+{txt}{space 2}(High gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 1}(Age 15-24  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Tertiary..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2} 1.054744{col 26}{space 2} .3624878{col 37}{space 1}    2.91{col 46}{space 3}0.004{col 54}{space 4} .3442656{col 67}{space 3} 1.765222
+{txt}{space 2}(High gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 3}(Age 55+  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Secondar..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2}-.6623014{col 26}{space 2} .2260579{col 37}{space 1}   -2.93{col 46}{space 3}0.003{col 54}{space 4}-1.105376{col 67}{space 3}-.2192267
+{txt}{space 2}(High gap  {c |}
+{space 9}vs  {c |}
+Developi..)  {c |}
+{space 3}(Age 55+  {c |}
+{space 9}vs  {c |}
+{space 1}Age 25-54)  {c |}
+(Tertiary..  {c |}
+{space 9}vs  {c |}
+{space 6}base)  {c |}{col 14}{res}{space 2} .3077833{col 26}{space 2} .5485138{col 37}{space 1}    0.56{col 46}{space 3}0.575{col 54}{space 4}-.7673071{col 67}{space 3} 1.382874
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. contrast rb2.smartcat#r.agecat#(educ), effects
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 64}{c TT}{hline 11}{hline 12}{hline 11}
+{col 65}{text}{c |}         df{col 77}           F{col 89}        P>F
+{col 1}{text}{hline 64}{c +}{hline 11}{hline 12}{hline 11}
+{space 43}smartcat#agecat#educ {c |}
+{space 6}(Developing country vs Low gap) (Age 15-24 vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        2{col 77}{space 3}    14.77{col 89}{space 2}   0.0000
+{txt}(Developing country vs Low gap) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        2{col 77}{space 3}     5.32{col 89}{space 2}   0.0049
+{txt}{space 8}(High gap vs Low gap) (Age 15-24 vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        2{col 77}{space 3}     1.15{col 89}{space 2}   0.3164
+{txt}{space 10}(High gap vs Low gap) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        2{col 77}{space 3}     6.63{col 89}{space 2}   0.0013
+{col 1}{text}                                                         Joint {col 65}{c |}{result}{space 2}        8{col 77}{space 3}     8.88{col 89}{space 2}   0.0000
+{col 1}{text}                                                         Design{col 65}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 64}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 99}Note: F statistics are adjusted for the survey design.{p_end}
+
+{res}{txt}{hline 33}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 34}{c |}   Contrast{col 46}   Std. Err.{col 58}      t{col 66}   P>|t|{col 74}     [95% Con{col 87}f. Interval]
+{hline 33}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 12}smartcat#agecat#educ {c |}
+(Developing country vs Low gap)  {c |}
+{space 7}(Age 15-24 vs Age 25-54)  {c |}
+{space 2}(Secondary education vs base)  {c |}{col 34}{res}{space 2}-.5031181{col 46}{space 2}  .103166{col 57}{space 1}   -4.88{col 66}{space 3}0.000{col 74}{space 4}-.7053241{col 87}{space 3}-.3009122
+{txt}(Developing country vs Low gap)  {c |}
+{space 7}(Age 15-24 vs Age 25-54)  {c |}
+{space 3}(Tertiary education vs base)  {c |}{col 34}{res}{space 2}-1.146591{col 46}{space 2} .3518966{col 57}{space 1}   -3.26{col 66}{space 3}0.001{col 74}{space 4} -1.83631{col 87}{space 3}-.4568714
+{txt}(Developing country vs Low gap)  {c |}
+{space 9}(Age 55+ vs Age 25-54)  {c |}
+{space 2}(Secondary education vs base)  {c |}{col 34}{res}{space 2} .6285307{col 46}{space 2} .2199733{col 57}{space 1}    2.86{col 66}{space 3}0.004{col 74}{space 4} .1973817{col 87}{space 3}  1.05968
+{txt}(Developing country vs Low gap)  {c |}
+{space 9}(Age 55+ vs Age 25-54)  {c |}
+{space 3}(Tertiary education vs base)  {c |}{col 34}{res}{space 2}-.7599401{col 46}{space 2}  .540717{col 57}{space 1}   -1.41{col 66}{space 3}0.160{col 74}{space 4}-1.819749{col 87}{space 3} .2998684
+{txt}{space 10}(High gap vs Low gap)  {c |}
+{space 7}(Age 15-24 vs Age 25-54)  {c |}
+{space 2}(Secondary education vs base)  {c |}{col 34}{res}{space 2} .1021314{col 46}{space 2} .1011988{col 57}{space 1}    1.01{col 66}{space 3}0.313{col 74}{space 4}-.0962188{col 87}{space 3} .3004816
+{txt}{space 10}(High gap vs Low gap)  {c |}
+{space 7}(Age 15-24 vs Age 25-54)  {c |}
+{space 3}(Tertiary education vs base)  {c |}{col 34}{res}{space 2} -.091847{col 46}{space 2}  .172228{col 57}{space 1}   -0.53{col 66}{space 3}0.594{col 74}{space 4}-.4294149{col 87}{space 3} .2457209
+{txt}{space 10}(High gap vs Low gap)  {c |}
+{space 9}(Age 55+ vs Age 25-54)  {c |}
+{space 2}(Secondary education vs base)  {c |}{col 34}{res}{space 2}-.0337708{col 46}{space 2} .0931626{col 57}{space 1}   -0.36{col 66}{space 3}0.717{col 74}{space 4}-.2163701{col 87}{space 3} .1488285
+{txt}{space 10}(High gap vs Low gap)  {c |}
+{space 9}(Age 55+ vs Age 25-54)  {c |}
+{space 3}(Tertiary education vs base)  {c |}{col 34}{res}{space 2}-.4521569{col 46}{space 2} .1329495{col 57}{space 1}   -3.40{col 66}{space 3}0.001{col 74}{space 4}-.7127387{col 87}{space 3} -.191575
+{txt}{hline 33}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. contrast rb3.smartcat#r.agecat#(educ), effects
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 59}{c TT}{hline 11}{hline 12}{hline 11}
+{col 60}{text}{c |}         df{col 72}           F{col 84}        P>F
+{col 1}{text}{hline 59}{c +}{hline 11}{hline 12}{hline 11}
+{space 38}smartcat#agecat#educ {c |}
+(Developing country vs High gap) (Age 15-24 vs Age 25-54)  {c |}
+{space 50}(joint)  {col 60}{text}{c |}{result}{space 2}        2{col 72}{space 3}    17.00{col 84}{space 2}   0.0000
+{txt}{space 2}(Developing country vs High gap) (Age 55+ vs Age 25-54)  {c |}
+{space 50}(joint)  {col 60}{text}{c |}{result}{space 2}        2{col 72}{space 3}     4.57{col 84}{space 2}   0.0104
+{txt}{space 3}(Low gap vs High gap) (Age 15-24 vs Age 25-54) (joint)  {col 60}{text}{c |}{result}{space 2}        2{col 72}{space 3}     1.15{col 84}{space 2}   0.3164
+{txt}{space 5}(Low gap vs High gap) (Age 55+ vs Age 25-54) (joint)  {col 60}{text}{c |}{result}{space 2}        2{col 72}{space 3}     6.63{col 84}{space 2}   0.0013
+{col 1}{text}                                                    Joint {col 60}{c |}{result}{space 2}        8{col 72}{space 3}     8.88{col 84}{space 2}   0.0000
+{col 1}{text}                                                    Design{col 60}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 59}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 94}Note: F statistics are adjusted for the survey design.{p_end}
+
+{res}{txt}{hline 31}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 32}{c |}   Contrast{col 44}   Std. Err.{col 56}      t{col 64}   P>|t|{col 72}     [95% Con{col 85}f. Interval]
+{hline 31}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}smartcat#agecat#educ {c |}
+{space 10}(Developing country  {c |}
+{space 27}vs  {c |}
+{space 20}High gap)  {c |}
+{space 5}(Age 15-24 vs Age 25-54)  {c |}
+(Secondary education vs base)  {c |}{col 32}{res}{space 2}-.6052496{col 44}{space 2} .1097053{col 55}{space 1}   -5.52{col 64}{space 3}0.000{col 72}{space 4}-.8202725{col 85}{space 3}-.3902266
+{txt}{space 10}(Developing country  {c |}
+{space 27}vs  {c |}
+{space 20}High gap)  {c |}
+{space 5}(Age 15-24 vs Age 25-54)  {c |}
+{space 1}(Tertiary education vs base)  {c |}{col 32}{res}{space 2}-1.054744{col 44}{space 2} .3624878{col 55}{space 1}   -2.91{col 64}{space 3}0.004{col 72}{space 4}-1.765222{col 85}{space 3}-.3442656
+{txt}{space 10}(Developing country  {c |}
+{space 27}vs  {c |}
+{space 20}High gap)  {c |}
+{space 7}(Age 55+ vs Age 25-54)  {c |}
+(Secondary education vs base)  {c |}{col 32}{res}{space 2} .6623014{col 44}{space 2} .2260579{col 55}{space 1}    2.93{col 64}{space 3}0.003{col 72}{space 4} .2192267{col 85}{space 3} 1.105376
+{txt}{space 10}(Developing country  {c |}
+{space 27}vs  {c |}
+{space 20}High gap)  {c |}
+{space 7}(Age 55+ vs Age 25-54)  {c |}
+{space 1}(Tertiary education vs base)  {c |}{col 32}{res}{space 2}-.3077833{col 44}{space 2} .5485138{col 55}{space 1}   -0.56{col 64}{space 3}0.575{col 72}{space 4}-1.382874{col 85}{space 3} .7673071
+{txt}{space 8}(Low gap vs High gap)  {c |}
+{space 5}(Age 15-24 vs Age 25-54)  {c |}
+(Secondary education vs base)  {c |}{col 32}{res}{space 2}-.1021314{col 44}{space 2} .1011988{col 55}{space 1}   -1.01{col 64}{space 3}0.313{col 72}{space 4}-.3004816{col 85}{space 3} .0962188
+{txt}{space 8}(Low gap vs High gap)  {c |}
+{space 5}(Age 15-24 vs Age 25-54)  {c |}
+{space 1}(Tertiary education vs base)  {c |}{col 32}{res}{space 2}  .091847{col 44}{space 2}  .172228{col 55}{space 1}    0.53{col 64}{space 3}0.594{col 72}{space 4}-.2457209{col 85}{space 3} .4294149
+{txt}{space 8}(Low gap vs High gap)  {c |}
+{space 7}(Age 55+ vs Age 25-54)  {c |}
+(Secondary education vs base)  {c |}{col 32}{res}{space 2} .0337708{col 44}{space 2} .0931626{col 55}{space 1}    0.36{col 64}{space 3}0.717{col 72}{space 4}-.1488285{col 85}{space 3} .2163701
+{txt}{space 8}(Low gap vs High gap)  {c |}
+{space 7}(Age 55+ vs Age 25-54)  {c |}
+{space 1}(Tertiary education vs base)  {c |}{col 32}{res}{space 2} .4521569{col 44}{space 2} .1329495{col 55}{space 1}    3.40{col 64}{space 3}0.001{col 72}{space 4}  .191575{col 85}{space 3} .7127387
+{txt}{hline 31}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\yoons\AppData\Local\Temp\STD0f000000.tmp"
+{txt}
+{com}. 
+. contrast rb1.smartcat#r.agecat#(married) 
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 64}{c TT}{hline 11}{hline 12}{hline 11}
+{col 65}{text}{c |}         df{col 77}           F{col 89}        P>F
+{col 1}{text}{hline 64}{c +}{hline 11}{hline 12}{hline 11}
+{space 40}smartcat#agecat#married {c |}
+{space 6}(Low gap vs Developing country) (Age 15-24 vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.93{col 89}{space 2}   0.3343
+{txt}(Low gap vs Developing country) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.64{col 89}{space 2}   0.4232
+{txt}{space 5}(High gap vs Developing country) (Age 15-24 vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     3.09{col 89}{space 2}   0.0789
+{txt}{space 7}(High gap vs Developing country) (Age 55+ vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.71{col 89}{space 2}   0.4004
+{col 1}{text}                                                         Joint {col 65}{c |}{result}{space 2}        4{col 77}{space 3}     2.87{col 89}{space 2}   0.0216
+{col 1}{text}                                                         Design{col 65}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 64}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 99}Note: F statistics are adjusted for the survey design.{p_end}
+
+{com}. contrast rb2.smartcat#r.agecat#(married) 
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 64}{c TT}{hline 11}{hline 12}{hline 11}
+{col 65}{text}{c |}         df{col 77}           F{col 89}        P>F
+{col 1}{text}{hline 64}{c +}{hline 11}{hline 12}{hline 11}
+{space 40}smartcat#agecat#married {c |}
+{space 6}(Developing country vs Low gap) (Age 15-24 vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.93{col 89}{space 2}   0.3343
+{txt}(Developing country vs Low gap) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.64{col 89}{space 2}   0.4232
+{txt}{space 8}(High gap vs Low gap) (Age 15-24 vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     8.38{col 89}{space 2}   0.0038
+{txt}{space 10}(High gap vs Low gap) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     5.97{col 89}{space 2}   0.0146
+{col 1}{text}                                                         Joint {col 65}{c |}{result}{space 2}        4{col 77}{space 3}     2.87{col 89}{space 2}   0.0216
+{col 1}{text}                                                         Design{col 65}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 64}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 99}Note: F statistics are adjusted for the survey design.{p_end}
+
+{com}. contrast rb3.smartcat#r.agecat#(married) 
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 59}{c TT}{hline 11}{hline 12}{hline 11}
+{col 60}{text}{c |}         df{col 72}           F{col 84}        P>F
+{col 1}{text}{hline 59}{c +}{hline 11}{hline 12}{hline 11}
+{space 35}smartcat#agecat#married {c |}
+(Developing country vs High gap) (Age 15-24 vs Age 25-54)  {c |}
+{space 50}(joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     3.09{col 84}{space 2}   0.0789
+{txt}{space 2}(Developing country vs High gap) (Age 55+ vs Age 25-54)  {c |}
+{space 50}(joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     0.71{col 84}{space 2}   0.4004
+{txt}{space 3}(Low gap vs High gap) (Age 15-24 vs Age 25-54) (joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     8.38{col 84}{space 2}   0.0038
+{txt}{space 5}(Low gap vs High gap) (Age 55+ vs Age 25-54) (joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     5.97{col 84}{space 2}   0.0146
+{col 1}{text}                                                    Joint {col 60}{c |}{result}{space 2}        4{col 72}{space 3}     2.87{col 84}{space 2}   0.0216
+{col 1}{text}                                                    Design{col 60}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 59}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 94}Note: F statistics are adjusted for the survey design.{p_end}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\yoons\AppData\Local\Temp\STD0f000000.tmp"
+{txt}
+{com}. contrast rb1.smartcat#r.agecat#(kids) 
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 64}{c TT}{hline 11}{hline 12}{hline 11}
+{col 65}{text}{c |}         df{col 77}           F{col 89}        P>F
+{col 1}{text}{hline 64}{c +}{hline 11}{hline 12}{hline 11}
+{space 42}smartcat#agecat#kids1 {c |}
+{space 6}(Low gap vs Developing country) (Age 15-24 vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.47{col 89}{space 2}   0.4918
+{txt}(Low gap vs Developing country) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     3.60{col 89}{space 2}   0.0579
+{txt}{space 5}(High gap vs Developing country) (Age 15-24 vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.34{col 89}{space 2}   0.5612
+{txt}{space 7}(High gap vs Developing country) (Age 55+ vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     4.95{col 89}{space 2}   0.0261
+{col 1}{text}                                                         Joint {col 65}{c |}{result}{space 2}        4{col 77}{space 3}     2.47{col 89}{space 2}   0.0429
+{col 1}{text}                                                         Design{col 65}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 64}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 99}Note: F statistics are adjusted for the survey design.{p_end}
+
+{com}. contrast rb2.smartcat#r.agecat#(kids) 
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 64}{c TT}{hline 11}{hline 12}{hline 11}
+{col 65}{text}{c |}         df{col 77}           F{col 89}        P>F
+{col 1}{text}{hline 64}{c +}{hline 11}{hline 12}{hline 11}
+{space 42}smartcat#agecat#kids1 {c |}
+{space 6}(Developing country vs Low gap) (Age 15-24 vs Age 25-54)  {c |}
+{space 55}(joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.47{col 89}{space 2}   0.4918
+{txt}(Developing country vs Low gap) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     3.60{col 89}{space 2}   0.0579
+{txt}{space 8}(High gap vs Low gap) (Age 15-24 vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     3.42{col 89}{space 2}   0.0646
+{txt}{space 10}(High gap vs Low gap) (Age 55+ vs Age 25-54) (joint)  {col 65}{text}{c |}{result}{space 2}        1{col 77}{space 3}     0.53{col 89}{space 2}   0.4653
+{col 1}{text}                                                         Joint {col 65}{c |}{result}{space 2}        4{col 77}{space 3}     2.47{col 89}{space 2}   0.0429
+{col 1}{text}                                                         Design{col 65}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 64}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 99}Note: F statistics are adjusted for the survey design.{p_end}
+
+{com}. contrast rb3.smartcat#r.agecat#(kids) 
+{res}
+{txt}Contrasts of marginal linear predictions
+
+{col 49}Design df{col 67}= {res}    56,636
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:Margins}:{space 1}{res:asbalanced}{p_end}
+{p2colreset}{...}
+
+{res}{col 1}{text}{hline 59}{c TT}{hline 11}{hline 12}{hline 11}
+{col 60}{text}{c |}         df{col 72}           F{col 84}        P>F
+{col 1}{text}{hline 59}{c +}{hline 11}{hline 12}{hline 11}
+{space 37}smartcat#agecat#kids1 {c |}
+(Developing country vs High gap) (Age 15-24 vs Age 25-54)  {c |}
+{space 50}(joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     0.34{col 84}{space 2}   0.5612
+{txt}{space 2}(Developing country vs High gap) (Age 55+ vs Age 25-54)  {c |}
+{space 50}(joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     4.95{col 84}{space 2}   0.0261
+{txt}{space 3}(Low gap vs High gap) (Age 15-24 vs Age 25-54) (joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     3.42{col 84}{space 2}   0.0646
+{txt}{space 5}(Low gap vs High gap) (Age 55+ vs Age 25-54) (joint)  {col 60}{text}{c |}{result}{space 2}        1{col 72}{space 3}     0.53{col 84}{space 2}   0.4653
+{col 1}{text}                                                    Joint {col 60}{c |}{result}{space 2}        4{col 72}{space 3}     2.47{col 84}{space 2}   0.0429
+{col 1}{text}                                                    Design{col 60}{c |}{result}{space 2}    56636
+{col 1}{text}{hline 59}{c BT}{hline 11}{hline 12}{hline 11}
+{p 0 6 0 94}Note: F statistics are adjusted for the survey design.{p_end}
+
+{com}. 
+{txt}end of do-file
+
+{com}. do "C:\Users\yoons\AppData\Local\Temp\STD0f000000.tmp"
+{txt}
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}I:\COMMON\Stefan\Papers\Womans participation\Econometric Analysis\Gallup_contrast.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Oct 2017, 18:08:10
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

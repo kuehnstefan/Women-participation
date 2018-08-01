@@ -1,0 +1,1192 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}D:\Projects\Women participation\Econometric Analysis\Gallup_clean.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}31 Jan 2018, 14:32:15
+{txt}
+{com}. 
+. ***********************************************
+. * Loading GET LFPR rates for the country
+. ***********************************************
+. /*
+> use "D:\TEM\LFEP Model July 2015\Dissemination datasets\Dissemination LFEP - Country data (1990-2050, including TOTALS) July 2015.dta", clear
+> keep if age_group=="Total (15+)"
+> keep if year==2016
+> gen PR_GAP = PR_M-PR_F
+> keep iso3code ilo_code PR_M PR_F PR_GAP
+> */ 
+. use "$PATH\Input data\GET LFPR.dta", clear
+{txt}
+{com}. gen year=2016
+{txt}
+{com}. merge 1:1 ilo_code year using "D:\TEM\GET Model November 2017\Final Datasets\Productivity per country November 2017.dta", keepusing(pcgdppp)
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}           7,375
+{txt}{col 9}from master{col 30}{res}               4{txt}  (_merge==1)
+{col 9}from using{col 30}{res}           7,371{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}             189{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop if _merge==2
+{txt}(7,371 observations deleted)
+
+{com}. drop _merge
+{txt}
+{com}. merge 1:1 iso3code using "$REGIONS", keepusing(incomegroup)
+{res}{txt}(label incomegroup already defined)
+(label region already defined)
+(label subregiondetailed already defined)
+(label subregionbroad already defined)
+
+{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}              18
+{txt}{col 9}from master{col 30}{res}               0{txt}  (_merge==1)
+{col 9}from using{col 30}{res}              18{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}             193{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop if _merge==2
+{txt}(18 observations deleted)
+
+{com}. drop _merge
+{txt}
+{com}. regress PR_F c.pcgdppp##c.pcgdppp PR_M c.PR_M#c.PR_M if incomegroup!=1
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       158
+{txt}{hline 13}{c +}{hline 34}   F(4, 153)       = {res}     4.45
+{txt}       Model {c |} {res} 3166.74616         4  791.686539   {txt}Prob > F        ={res}    0.0020
+{txt}    Residual {c |} {res} 27224.3832       153  177.937145   {txt}R-squared       ={res}    0.1042
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0808
+{txt}       Total {c |} {res} 30391.1293       157  193.574072   {txt}Root MSE        =   {res} 13.339
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}        PR_F{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}pcgdppp {c |}{col 14}{res}{space 2} .0002691{col 26}{space 2} .0001448{col 37}{space 1}    1.86{col 46}{space 3}0.065{col 54}{space 4}-.0000169{col 67}{space 3} .0005552
+{txt}{space 12} {c |}
+{space 3}c.pcgdppp#{c |}
+{space 3}c.pcgdppp {c |}{col 14}{res}{space 2}-2.05e-09{col 26}{space 2} 1.68e-09{col 37}{space 1}   -1.22{col 46}{space 3}0.223{col 54}{space 4}-5.36e-09{col 67}{space 3} 1.26e-09
+{txt}{space 12} {c |}
+{space 8}PR_M {c |}{col 14}{res}{space 2} 1.308951{col 26}{space 2} 1.665713{col 37}{space 1}    0.79{col 46}{space 3}0.433{col 54}{space 4}-1.981816{col 67}{space 3} 4.599719
+{txt}{space 12} {c |}
+{space 6}c.PR_M#{c |}
+{space 6}c.PR_M {c |}{col 14}{res}{space 2}-.0055345{col 26}{space 2} .0116799{col 37}{space 1}   -0.47{col 46}{space 3}0.636{col 54}{space 4}-.0286092{col 67}{space 3} .0175401
+{txt}{space 12} {c |}
+{space 7}_cons {c |}{col 14}{res}{space 2}-20.08828{col 26}{space 2} 58.84717{col 37}{space 1}   -0.34{col 46}{space 3}0.733{col 54}{space 4}-136.3462{col 67}{space 3} 96.16961
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. predict pred_F if incomegroup!=1
+{txt}(option {bf:xb} assumed; fitted values)
+(35 missing values generated)
+
+{com}. gen pred_gap=PR_M-pred_F
+{txt}(35 missing values generated)
+
+{com}. egen mgap=mean(pred_gap)
+{txt}
+{com}. replace pred_gap=mgap if pred_gap==. & incomegroup!=1
+{txt}(4 real changes made)
+
+{com}. gen gapdiff=PR_GAP-pred_gap
+{txt}(31 missing values generated)
+
+{com}. gen gapcat2=gapdiff>0
+{txt}
+{com}. drop year pcgdppp pred_F pred_gap mgap gapdiff
+{txt}
+{com}. label define gapcat2 0 "Low gap" 1 "High gap"
+{txt}
+{com}. label value gapcat2 gapcat2
+{txt}
+{com}. save "$PATH\Output data\GET LFPR with gapcat.dta", replace
+{txt}file D:\Projects\Women participation\Econometric Analysis\Output data\GET LFPR with gapcat.dta saved
+
+{com}. 
+. 
+. *****************************************************
+. * Read in the Dataset
+. *****************************************************
+. use "$PATH\Input data\Gallup almost complete dataset.dta", clear 
+{txt}
+{com}. 
+. 
+. *************************************************
+. * RECODING KEY VARIABLES 
+. *************************************************
+. tab emp_lfpr WP1230
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}      None          1          2          3 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}    26,590      7,262      6,653      3,731 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}    36,067     15,769     13,761      7,332 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}    62,657     23,031     20,414     11,063 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}         4          5          6          7 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}     2,084      1,263        660        376 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}     3,842      2,171      1,191        621 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}     5,926      3,434      1,851        997 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}         8          9         10         11 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}       232        127        113         38 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}       434        205        188         70 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}       666        332        301        108 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}        12         13         14         15 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}        40         36         12         25 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}        81         37         31         56 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}       121         73         43         81 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}        16         17         18         19 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}         7          7          6          0 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}        13         16         11          6 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}        20         23         17          6 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}        20         21         22         23 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}        11          3          2          3 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}        21          3          8          0 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}        32          6         10          3 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}        24         25         26         27 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}         0          3          1          0 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}         3          3          1          2 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}         3          6          2          2 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}        28         29         30         33 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}         1          1          0          0 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}         0          0          4          1 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}         1          1          4          1 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}        35         40         41         47 {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}         0          1          1          1 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}         1          1          0          0 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}         1          2          1          1 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}
+Labor Force {c |}
+Participati {c |}          WP1230 Children Under 15
+   on Index {c |}        50         67        97+       (DK) {c |}     Total
+{hline 12}{c +}{hline 44}{c +}{hline 10}
+          0 {c |}{res}         0          1          8        162 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}         1          0          7        226 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 44}{c +}{hline 10}
+      Total {c |}{res}         1          1         15        388 {txt}{c |}{res}   131,845 
+
+
+   {txt}EMP_LFPR {c |}   WP1230
+Labor Force {c |}  Children
+Participati {c |}  Under 15
+   on Index {c |} (Refused) {c |}     Total
+{hline 12}{c +}{hline 11}{c +}{hline 10}
+          0 {c |}{res}        79 {txt}{c |}{res}    49,540 
+{txt}Index Score {c |}{res}       121 {txt}{c |}{res}    82,305 
+{txt}{hline 12}{c +}{hline 11}{c +}{hline 10}
+      Total {c |}{res}       200 {txt}{c |}{res}   131,845 
+
+{txt}
+{com}. br WP1223 WP1230 WP1230Recoded WP1220 WP1219
+{txt}
+{com}. 
+. *covariates*
+. gen female=WP1219
+{txt}
+{com}. replace female=0 if female==1
+{txt}(61,759 real changes made)
+
+{com}. replace female=1 if female==2
+{txt}(71,086 real changes made)
+
+{com}. 
+. gen lfpr=emp_lfpr
+{txt}(1,000 missing values generated)
+
+{com}. 
+. gen married=0
+{txt}
+{com}. replace married=1 if WP1223==2 | WP1223==8 //married, domestic partner
+{txt}(75,926 real changes made)
+
+{com}. replace married=. if WP1223==6 | WP1223==7 //DK, refused
+{txt}(1,807 real changes made, 1,807 to missing)
+
+{com}. label variable married "In Relationship"
+{txt}
+{com}. 
+. gen kids=WP1230
+{txt}
+{com}. replace kids=. if kids>90 // 98 (DK), 99=refused
+{txt}(603 real changes made, 603 to missing)
+
+{com}. 
+. gen kids2=kids^2
+{txt}(603 missing values generated)
+
+{com}. 
+. gen kids1=0
+{txt}
+{com}. replace kids1=1 if WP1230>=1
+{txt}(69,859 real changes made)
+
+{com}. replace kids1=. if WP1230>90
+{txt}(603 real changes made, 603 to missing)
+
+{com}. label variable kids1 "Children"
+{txt}
+{com}. 
+. gen housenum = WP12
+{txt}(2,004 missing values generated)
+
+{com}. replace housenum=. if housenum>=90
+{txt}(90 real changes made, 90 to missing)
+
+{com}. 
+. gen age=WP1220
+{txt}
+{com}. replace age=. if age==100 //100=refused
+{txt}(488 real changes made, 488 to missing)
+
+{com}. 
+. generate age2=age^2
+{txt}(488 missing values generated)
+
+{com}. 
+. ** defining the category
+. egen agecat=cut(age) , at(15,25,55,100) label
+{txt}(488 missing values generated)
+
+{com}. label define agecat 0 "Age 15-24" 1 "Age 25-54" 2 "Age 55+", modify
+{txt}
+{com}. 
+. 
+. *education dummies, baseline for comparison is primary*
+.         *gen ed_prim=0
+.         *replace ed_prim=1 if wp3117==1
+. 
+. gen educ=wp3117
+{txt}(1,013 missing values generated)
+
+{com}. replace educ=. if educ>3
+{txt}(456 real changes made, 456 to missing)
+
+{com}. label define educ 1 "Primary education" 2 "Secondary education" 3 "Tertiary education"
+{txt}
+{com}. label value educ educ
+{txt}
+{com}.         
+. gen ed_second=0
+{txt}
+{com}. replace ed_second=1 if wp3117==2
+{txt}(65,362 real changes made)
+
+{com}. replace ed_second=. if wp3117==4 | wp3117==5
+{txt}(456 real changes made, 456 to missing)
+
+{com}. 
+. gen ed_tert=0
+{txt}
+{com}. replace ed_tert=1 if wp3117==3
+{txt}(22,168 real changes made)
+
+{com}. replace ed_tert=. if wp3117==4 | wp3117==5
+{txt}(456 real changes made, 456 to missing)
+
+{com}. 
+. 
+. *urban/rural*
+. gen urban=0
+{txt}
+{com}. replace urban=1 if WP14==3 | WP14==6 //large city or suburb of a large city
+{txt}(56,258 real changes made)
+
+{com}. replace urban=. if WP14==4 | WP14==5 //refused or DK
+{txt}(326 real changes made, 326 to missing)
+
+{com}. label variable urban "Urban"
+{txt}
+{com}. 
+. /*gen rural=0
+> replace rural=1 if WP14==1 | WP14==2 //small town or rural area
+> replace rural=. if WP14==4 | WP14==5
+> */ 
+. 
+. *Internet*
+. gen internet=0
+{txt}
+{com}. replace internet=1 if WP16056==1
+{txt}(72,288 real changes made)
+
+{com}. replace internet=. if WP16056==. | WP16056==3 | WP16056==4
+{txt}(1,059 real changes made, 1,059 to missing)
+
+{com}. label variable internet "Internet"
+{txt}
+{com}. 
+. *Landline*
+. gen landline=0
+{txt}
+{com}. replace landline=1 if  WP17625==1
+{txt}(45,607 real changes made)
+
+{com}. replace landline=. if WP17625==. | WP17625==3 | WP17625==4
+{txt}(6,330 real changes made, 6,330 to missing)
+
+{com}. 
+. *mobile phone
+. gen mobile=0
+{txt}
+{com}. replace mobile=1 if  WP17626==1
+{txt}(110,476 real changes made)
+
+{com}. replace mobile=. if WP17626==. | WP17626==3 | WP17626==4
+{txt}(291 real changes made, 291 to missing)
+
+{com}. 
+. egen phone = rowmax(mobile landline)
+{txt}(60 missing values generated)
+
+{com}. label variable phone "Phone"
+{txt}
+{com}. 
+. egen comm=rowmax(mobile landline internet)
+{txt}(31 missing values generated)
+
+{com}. 
+. * Religion
+. gen religion=1
+{txt}
+{com}. replace religion=2 if WP1233==1 | WP1233==2 | WP1233==3 | WP1233==28
+{txt}(67,269 real changes made)
+
+{com}. replace religion=3 if WP1233==4 | WP1233==5 | WP1233==6
+{txt}(27,390 real changes made)
+
+{com}. replace religion=4 if WP1233==8
+{txt}(4,378 real changes made)
+
+{com}. *replace religion=5 if WP1233==9
+. *replace religion=6 if WP1233==15
+. replace religion=5 if WP1233==26
+{txt}(9,608 real changes made)
+
+{com}. label define religion 1 "Other" 2 "Christian" 3 "Islam" 4 "Hinduism" /*5 "Budism" 6 "Judaism"*/ 5 "Secular"
+{txt}
+{com}. label value religion religion
+{txt}
+{com}. label variable religion "Religion"
+{txt}
+{com}. gen dreligion=1
+{txt}
+{com}. replace dreligion=0 if religion==5
+{txt}(9,608 real changes made)
+
+{com}. label variable dreligion "Religion dummy"
+{txt}
+{com}. label define dreligion 0 "Secular" 1 "Religion"
+{txt}
+{com}. label value dreligion dreligion
+{txt}
+{com}. 
+. gen islam=0
+{txt}
+{com}. replace islam=1 if religion==3
+{txt}(27,390 real changes made)
+
+{com}. 
+. *Female Preference to Work at Paid Job or Stay at Home*
+. tab WP17632
+
+ {txt}WP17632 Prefer to {c |}
+Work at a Paid Job {c |}
+ or Prefer to Stay {c |}
+           at Home {c |}      Freq.     Percent        Cum.
+{hline 19}{c +}{hline 35}
+Work at a paid job {c |}{res}     23,481       33.03       33.03
+{txt}      Stay at home {c |}{res}     14,328       20.16       53.19
+{txt}              Both {c |}{res}     31,510       44.33       97.51
+{txt}              (DK) {c |}{res}      1,436        2.02       99.53
+{txt}         (Refused) {c |}{res}        331        0.47      100.00
+{txt}{hline 19}{c +}{hline 35}
+             Total {c |}{res}     71,086      100.00
+{txt}
+{com}. gen pref_work=1 if WP17632==1 | WP17632==3
+{txt}(77,854 missing values generated)
+
+{com}. replace pref_work=. if WP17632==4 | WP17632==5 
+{txt}(0 real changes made)
+
+{com}. replace pref_work=0 if WP17632==2 
+{txt}(14,328 real changes made)
+
+{com}. label variable pref_work "Prefer to work"
+{txt}
+{com}. 
+. 
+. *Acceptable for Women in Family to Have a Paid Job Outside Home*
+. tab WP17634 
+
+    {txt}WP17634 {c |}
+ Acceptable {c |}
+  for Woman {c |}
+  in Family {c |}
+  to Have a {c |}
+   Paid Job {c |}
+    Outside {c |}
+Home if She {c |}
+         Wa {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+      Agree {c |}{res}    113,741       85.62       85.62
+{txt}   Disagree {c |}{res}     15,775       11.87       97.49
+{txt}       (DK) {c |}{res}      2,930        2.21       99.70
+{txt}  (Refused) {c |}{res}        399        0.30      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}    132,845      100.00
+{txt}
+{com}. gen pref_accept=0 
+{txt}
+{com}. replace pref_accept=1 if WP17634==1
+{txt}(113,741 real changes made)
+
+{com}. replace pref_accept=. if WP17634==. | WP17634==3 | WP17634==4
+{txt}(3,329 real changes made, 3,329 to missing)
+
+{com}. label variable pref_accept "Acceptible to work"
+{txt}
+{com}. 
+. *Biggest Challenge of Women Who Work at Paid Jobs*
+. tab WP17635
+
+ {txt}WP17635 Biggest Challenge of Women Who {c |}
+                      Work at Paid Jobs {c |}      Freq.     Percent        Cum.
+{hline 40}{c +}{hline 35}
+FAMILY: Lack of flexible work hours/app {c |}{res}      8,789        6.62        6.62
+{txt}FAMILY: Balance between work and family {c |}{res}     31,525       23.73       30.35
+{txt}FAMILY: Lack of affordable care for chi {c |}{res}     11,850        8.92       39.27
+{txt}FAMILY: Family members dont approve of  {c |}{res}      5,554        4.18       43.45
+{txt}AT WORK: Abuse/harassment/discriminatio {c |}{res}     15,444       11.63       55.07
+{txt}      AT WORK: Lack of good-paying jobs {c |}{res}     11,840        8.91       63.99
+{txt}AT WORK: Unequal pay for doing similar  {c |}{res}      8,923        6.72       70.70
+{txt}AT WORK: Lack of transportation/lack of {c |}{res}      2,399        1.81       72.51
+{txt}GETTING A JOB: People prefer to hire or {c |}{res}      3,190        2.40       74.91
+{txt}GETTING A JOB: Lack of skills, experien {c |}{res}      3,018        2.27       77.18
+{txt}                 Other (DO NOT SPECIFY) {c |}{res}     10,413        7.84       85.02
+{txt}                                   (DK) {c |}{res}     18,980       14.29       99.31
+{txt}                              (Refused) {c |}{res}        920        0.69      100.00
+{txt}{hline 40}{c +}{hline 35}
+                                  Total {c |}{res}    132,845      100.00
+{txt}
+{com}. gen challenge=WP17635
+{txt}
+{com}. replace challenge=. if WP17635==99 //97=other, 98=DK
+{txt}(920 real changes made, 920 to missing)
+
+{com}. label define challenge 1 "Lack of flexibility" 2 "Work-family balance" 3 "Lack of affordable care" 4 "Non-approval by family" 5 "Abuse, harassement, discrimination" 6 "Lack of good-paying jobs" 7 "Unequal pay" 8 "Lack of transportation" 9 "Men prefered in job" 10 "Lack of skills" 11 "Other"
+{txt}
+{com}. label value challenge challenge
+{txt}
+{com}. ** http://www.stata.com/manuals13/u25.pdf **
+.         **FACTOR VARIABLE, SPECIFYING BASE LEVEL**//baseline for comparison is DK
+.                 *ib98.pref_challenge 
+.         
+. *Opportunity For Women to Find a Good Job Compared to Men: worse or better*
+. tab WP17636
+
+ {txt}WP17636 Opportunity {c |}
+ For Women to Find a {c |}
+Good Job Compared to {c |}
+                 Men {c |}      Freq.     Percent        Cum.
+{hline 21}{c +}{hline 35}
+  Better opportunity {c |}{res}     30,978       23.32       23.32
+{txt}The same opportunity {c |}{res}     55,771       41.98       65.30
+{txt}   Worse opportunity {c |}{res}     38,539       29.01       94.31
+{txt}                (DK) {c |}{res}      7,241        5.45       99.76
+{txt}           (Refused) {c |}{res}        316        0.24      100.00
+{txt}{hline 21}{c +}{hline 35}
+               Total {c |}{res}    132,845      100.00
+{txt}
+{com}. gen pref_opport=WP17636
+{txt}
+{com}. replace pref_opport=. if WP17636==5 //refused 
+{txt}(316 real changes made, 316 to missing)
+
+{com}. label define opport 1 "Better opportunity for women" 2 "Same opportunity for women" 3 "Worse opportunity for women"
+{txt}
+{com}. label value pref_opport opport
+{txt}
+{com}. label variable pref_opport "Opportunity"
+{txt}
+{com}.                 
+. 
+. *WOMEN TREATED WITH RESPECT 
+. tab WP9050      //      1-yes, 2-no, 3-dk
+
+     {txt}WP9050 {c |}
+      Women {c |}
+    Treated {c |}
+       with {c |}
+    Respect {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+        Yes {c |}{res}     84,242       66.64       66.64
+{txt}         No {c |}{res}     37,613       29.76       96.40
+{txt}       (DK) {c |}{res}      4,305        3.41       99.80
+{txt}  (Refused) {c |}{res}        247        0.20      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}    126,407      100.00
+{txt}
+{com}. gen respect=WP9050
+{txt}(6,438 missing values generated)
+
+{com}. replace respect=. if respect==4 
+{txt}(247 real changes made, 247 to missing)
+
+{com}. replace respect=0 if respect==2 | respect==3
+{txt}(41,918 real changes made)
+
+{com}. label variable respect "Women treated with respect"
+{txt}
+{com}. 
+. *Financial Well-Being Index             
+. tab INDEX_FL //continuous?
+
+   {txt}INDEX_FL {c |}
+  Financial {c |}
+ Life Index {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}     30,972       23.31       23.31
+{txt}   16.66667 {c |}{res}     29,939       22.54       45.85
+{txt}         25 {c |}{res}      1,523        1.15       47.00
+{txt}   33.33333 {c |}{res}     23,458       17.66       64.66
+{txt}         50 {c |}{res}     20,821       15.67       80.33
+{txt}   66.66667 {c |}{res}      6,425        4.84       85.17
+{txt}         75 {c |}{res}        722        0.54       85.71
+{txt}   83.33333 {c |}{res}      8,001        6.02       91.73
+{txt}        100 {c |}{res}     10,984        8.27      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}    132,845      100.00
+{txt}
+{com}. 
+. * infracstructure
+. 
+. 
+. *POVERTY*
+. gen poor=1
+{txt}
+{com}. replace poor=0 if INDEX_FS==100
+{txt}(74,787 real changes made)
+
+{com}. replace poor=. if INDEX_FS==. 
+{txt}(2,000 real changes made, 2,000 to missing)
+
+{com}. 
+. gen optimism = INDEX_OT/100
+{txt}(571 missing values generated)
+
+{com}. gen laworder = INDEX_LO/100
+{txt}(10,371 missing values generated)
+
+{com}. gen jobclimate = INDEX_JC/100
+{txt}(6,356 missing values generated)
+
+{com}. gen financial= INDEX_FL/100
+{txt}
+{com}. 
+. 
+. *INFRASTRUCTURE*
+. gen roads=WP92
+{txt}(6,356 missing values generated)
+
+{com}. replace roads=. if WP92==3 | WP92==4
+{txt}(2,360 real changes made, 2,360 to missing)
+
+{com}. replace roads=0 if WP92==2
+{txt}(56,727 real changes made)
+
+{com}. gen transport=WP91
+{txt}(6,356 missing values generated)
+
+{com}. replace transport=. if WP91==3 | WP91==4
+{txt}(6,374 real changes made, 6,374 to missing)
+
+{com}. replace transport=0 if WP91==2
+{txt}(46,688 real changes made)
+
+{com}. 
+. 
+. save "$PATH\Input data\GALLUP_clean1.dta", replace
+{txt}file D:\Projects\Women participation\Econometric Analysis\Input data\GALLUP_clean1.dta saved
+
+{com}. 
+. 
+. br WP17632 WP17633 WP17634 WP17635 WP17636 WP17637 
+{txt}
+{com}. 
+. 
+. *************************************************************
+. * Clean and Merge for EU Sample // set obs `=_N+1' 
+. *************************************************************
+. /*Adding N. Cyprus:
+> replace iso3code="NCYP" if country=="Northern Cyprus"
+> replace ilo_code=800 if country=="Northern Cyprus"
+> replace region=5 if country=="Northern Cyprus"
+> replace subregionbroad=52 if country=="Northern Cyprus"
+> replace incomegroup=4 if country=="Northern Cyprus"
+> replace development=3 if country=="Northern Cyprus"
+> save "D:\TEM\Regions and Countries\ILO regional groupings 2017.dta"
+> */
+. 
+. use "$PATH\Input data\GALLUP_clean1.dta", clear
+{txt}
+{com}. decode WP9048, generate(countryborn)
+{txt}
+{com}. replace countryborn=countrynew if countryborn==""
+{txt}(124,417 real changes made)
+
+{com}. foreach country in countrynew countryborn{c -(}
+{txt}  2{com}. *replace country="Bolivia, Plurinational State of" if country=="Bolivia" 
+. replace `country'="Antigua and Barbuda" if `country'=="Antigua & Barbuda"
+{txt}  3{com}. replace `country'="Congo, Democratic Republic of the" if `country'=="Congo Kinshasa" 
+{txt}  4{com}. replace `country'="Congo, Democratic Republic of the" if `country'=="Congo (Kinshasa)" 
+{txt}  5{com}. replace `country'="Congo" if `country'=="Congo Brazzaville" 
+{txt}  6{com}. replace `country'="Gambia" if `country'=="The Gambia"
+{txt}  7{com}. replace `country'="Hong Kong, China" if `country'=="Hong Kong" 
+{txt}  8{com}. replace `country'="Iran, Islamic Republic of" if `country'=="Iran" 
+{txt}  9{com}. replace `country'="Côte d'Ivoire" if `country'=="Ivory Coast" 
+{txt} 10{com}. replace `country'="Macedonia, the former Yugoslav Republic of" if `country'=="Macedonia" 
+{txt} 11{com}. replace `country'="Moldova, Republic of" if `country'=="Moldova" 
+{txt} 12{com}. replace `country'="Occupied Palestinian Territory" if `country'=="Palestine" 
+{txt} 13{com}. replace `country'="Occupied Palestinian Territory" if `country'=="Palestinian Territories"
+{txt} 14{com}. replace `country'="Réunion" if `country'=="Reunion Island"
+{txt} 15{com}. replace `country'="Russian Federation" if `country'=="Russia" 
+{txt} 16{com}. replace `country'="Sao Tome and Principe" if `country'=="Sao Tome & Principe"
+{txt} 17{com}. replace `country'="Korea, Republic of" if `country'=="South Korea"
+{txt} 18{com}. replace `country'="Syrian Arab Republic" if `country'=="Syria"
+{txt} 19{com}. replace `country'="Taiwan, China" if `country'=="Taiwan" 
+{txt} 20{com}. replace `country'="Tanzania, United Republic of" if `country'=="Tanzania"
+{txt} 21{com}. replace `country'="Trinidad and Tobago" if `country'=="Trinidad & Tobago"
+{txt} 22{com}. replace `country'="Venezuela, Bolivarian Republic of" if `country'=="Venezuela"
+{txt} 23{com}. replace `country'="Viet Nam" if `country'=="Vietnam" 
+{txt} 24{com}. replace `country'="Central African Republic" if `country'=="Central Africa Republic" 
+{txt} 25{com}. {c )-}
+{txt}(0 real changes made)
+variable {bf}countrynew{sf} was {bf}{res}str24{sf}{txt} now {bf}{res}str33{sf}
+{txt}(1,000 real changes made)
+(0 real changes made)
+(1,000 real changes made)
+(0 real changes made)
+(1,005 real changes made)
+(1,000 real changes made)
+(1,000 real changes made)
+variable {bf}countrynew{sf} was {bf}{res}str33{sf}{txt} now {bf}{res}str42{sf}
+{txt}(1,024 real changes made)
+(1,000 real changes made)
+(1,000 real changes made)
+(0 real changes made)
+(0 real changes made)
+(2,000 real changes made)
+(0 real changes made)
+(1,000 real changes made)
+(0 real changes made)
+(1,000 real changes made)
+(1,000 real changes made)
+(0 real changes made)
+(0 real changes made)
+(1,039 real changes made)
+(1,000 real changes made)
+(2 real changes made)
+variable {bf}countryborn{sf} was {bf}{res}str25{sf}{txt} now {bf}{res}str33{sf}
+{txt}(959 real changes made)
+(64 real changes made)
+(974 real changes made)
+(6 real changes made)
+(754 real changes made)
+(1,026 real changes made)
+(1,113 real changes made)
+variable {bf}countryborn{sf} was {bf}{res}str33{sf}{txt} now {bf}{res}str42{sf}
+{txt}(1,013 real changes made)
+(1,004 real changes made)
+(938 real changes made)
+(92 real changes made)
+(1 real change made)
+(2,132 real changes made)
+(4 real changes made)
+(1,000 real changes made)
+(185 real changes made)
+(983 real changes made)
+(1,009 real changes made)
+(3 real changes made)
+(32 real changes made)
+(1,044 real changes made)
+(988 real changes made)
+
+{com}. rename countryborn country
+{res}{txt}
+{com}. merge m:1 country using "$REGIONS", keepusing(iso3code)
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}           3,212
+{txt}{col 9}from master{col 30}{res}           3,177{txt}  (_merge==1)
+{col 9}from using{col 30}{res}              35{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}         129,668{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop if _merge!=3
+{txt}(3,212 observations deleted)
+
+{com}. drop _merge
+{txt}
+{com}. 
+. *** computing country shares of men opinion on women
+. preserve 
+{txt}
+{com}. collapse (sum) wgt, by(iso3code WP17633)
+{txt}
+{com}. drop if WP17633==.
+{txt}(172 observations deleted)
+
+{com}. egen total=total(wgt), by(iso3code)
+{txt}
+{com}. gen pref_men_=wgt/total*100
+{txt}
+{com}. drop wgt total
+{txt}
+{com}. reshape wide pref_men_ ,i(iso3code) j(WP17633)
+{txt}(note: j = 1 2 3 4 5)
+
+Data{col 36}long{col 43}->{col 48}wide
+{hline 77}
+Number of obs.                 {res}     678   {txt}->{res}     167
+{txt}Number of variables            {res}       3   {txt}->{res}       6
+{txt}j variable (5 values)           {res}WP17633   {txt}->   (dropped)
+xij variables:
+                              {res}pref_men_   {txt}->   {res}pref_men_1 pref_men_2 ... pref_men_5
+{txt}{hline 77}
+
+{com}. gen pref_men_home=pref_men_2
+{txt}(14 missing values generated)
+
+{com}. gen pref_men_work=pref_men_1 + pref_men_3
+{txt}(20 missing values generated)
+
+{com}. drop pref_men_?
+{txt}
+{com}. drop if pref_men_work==. | pref_men_home==.
+{txt}(24 observations deleted)
+
+{com}. egen mean_pref=mean(pref_men_work)
+{txt}
+{com}. gen cat_pref=pref_men_work<mean_pref
+{txt}
+{com}. drop mean_pref
+{txt}
+{com}. label variable pref_men_work "Share of men prefereing women to work" 
+{txt}
+{com}. label variable pref_men_home "Share of men prefereing women to stay home" 
+{txt}
+{com}. label variable cat_pref "Index whether country has high share of men prefering women to work"
+{txt}
+{com}. label define cat_pref 0 "Low share of men prefer women to work" 1 "High share of men prefer women to work"
+{txt}
+{com}. label value cat_pref cat_pref
+{txt}
+{com}. save "$PATH\Output data\male preferences country data.dta", replace
+{txt}file D:\Projects\Women participation\Econometric Analysis\Output data\male preferences country data.dta saved
+
+{com}. restore
+{txt}
+{com}. 
+. *** computing country shares of women opinion on women
+. preserve 
+{txt}
+{com}. collapse (sum) wgt, by(iso3code WP17632)
+{txt}
+{com}. drop if WP17632==.
+{txt}(167 observations deleted)
+
+{com}. egen total=total(wgt), by(iso3code)
+{txt}
+{com}. gen pref_women_=wgt/total*100
+{txt}
+{com}. drop wgt total
+{txt}
+{com}. reshape wide pref_women_ ,i(iso3code) j(WP17632)
+{txt}(note: j = 1 2 3 4 5)
+
+Data{col 36}long{col 43}->{col 48}wide
+{hline 77}
+Number of obs.                 {res}     691   {txt}->{res}     172
+{txt}Number of variables            {res}       3   {txt}->{res}       6
+{txt}j variable (5 values)           {res}WP17632   {txt}->   (dropped)
+xij variables:
+                            {res}pref_women_   {txt}->   {res}pref_women_1 pref_women_2 ... pref_women_5
+{txt}{hline 77}
+
+{com}. gen pref_women_home=pref_women_2
+{txt}(22 missing values generated)
+
+{com}. gen pref_women_work=pref_women_1 + pref_women_3
+{txt}(20 missing values generated)
+
+{com}. drop pref_women_?
+{txt}
+{com}. drop if pref_women_work==. | pref_women_home==.
+{txt}(28 observations deleted)
+
+{com}. egen mean_pref=mean(pref_women_work)
+{txt}
+{com}. gen catw_pref=pref_women_work<mean_pref
+{txt}
+{com}. drop mean_pref
+{txt}
+{com}. label variable pref_women_work "Share of men prefereing women to work" 
+{txt}
+{com}. label variable pref_women_home "Share of men prefereing women to stay home" 
+{txt}
+{com}. label variable catw_pref "Index whether country has high share of men prefering women to work"
+{txt}
+{com}. label define catw_pref 0 "Low share of men prefer women to work" 1 "High share of men prefer women to work"
+{txt}
+{com}. label value catw_pref catw_pref
+{txt}
+{com}. save "$PATH\Output data\female preferences country data.dta", replace
+{txt}file D:\Projects\Women participation\Econometric Analysis\Output data\female preferences country data.dta saved
+
+{com}. restore
+{txt}
+{com}. 
+. 
+. merge m:1 iso3code using "$PATH\Input data\GET LFPR.dta", keepusing(PR_F PR_M)
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}              32
+{txt}{col 9}from master{col 30}{res}               9{txt}  (_merge==1)
+{col 9}from using{col 30}{res}              23{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}         129,659{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop if _merge==2
+{txt}(23 observations deleted)
+
+{com}. drop _merge
+{txt}
+{com}. rename PR_F PR_F_origin
+{res}{txt}
+{com}. rename PR_M PR_M_origin
+{res}{txt}
+{com}. drop country
+{txt}
+{com}. 
+. merge m:1 iso3code using "$PATH\Output data\male preferences country data.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}             139
+{txt}{col 9}from master{col 30}{res}             139{txt}  (_merge==1)
+{col 9}from using{col 30}{res}               0{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}         129,529{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+{txt}
+{com}. merge m:1 iso3code using "$PATH\Output data\female preferences country data.dta"
+{res}
+{txt}{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}             124
+{txt}{col 9}from master{col 30}{res}             124{txt}  (_merge==1)
+{col 9}from using{col 30}{res}               0{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}         129,544{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop _merge
+{txt}
+{com}. 
+. rename countrynew country
+{res}{txt}
+{com}. merge m:1 country using "$REGIONS", keepusing(iso3code subregionbroad incomegroup development)
+{res}{txt}(label subregionbroad already defined)
+(label subregiondetailed already defined)
+(label region already defined)
+(label incomegroup already defined)
+(label development already defined)
+
+{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}             487
+{txt}{col 9}from master{col 30}{res}             400{txt}  (_merge==1)
+{col 9}from using{col 30}{res}              87{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}         129,268{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop if _merge!=3
+{txt}(487 observations deleted)
+
+{com}. drop _merge
+{txt}
+{com}. 
+. merge m:1 iso3code using "$PATH\Output data\GET LFPR with gapcat.dta"
+{res}{txt}(label incomegroup already defined)
+
+{col 5}Result{col 38}# of obs.
+{col 5}{hline 41}
+{col 5}not matched{col 30}{res}              32
+{txt}{col 9}from master{col 30}{res}               9{txt}  (_merge==1)
+{col 9}from using{col 30}{res}              23{txt}  (_merge==2)
+
+{col 5}matched{col 30}{res}         129,259{txt}  (_merge==3)
+{col 5}{hline 41}
+
+{com}. drop if _merge==2
+{txt}(23 observations deleted)
+
+{com}. drop _merge
+{txt}
+{com}. 
+. 
+. *************************
+. * Set thresholds, into variable gap_3 for 3 thresholds by group
+. * gap_2 to distinguish high gap only
+. *************************
+. gen gap_3=0
+{txt}
+{com}. * developing countries
+. generate byte threshold=recode(PR_GAP,10,30,50) if development==1
+{txt}(106,624 missing values generated)
+
+{com}. egen temp = group(threshold)
+{txt}(106624 missing values generated)
+
+{com}. replace gap_3=temp if development==1
+{txt}(22,645 real changes made, 1 to missing)
+
+{com}. drop threshold temp
+{txt}
+{com}. * emerging countries
+. generate byte threshold=recode(PR_GAP,20,40,60) if development==2
+{txt}(63,026 missing values generated)
+
+{com}. egen temp = group(threshold)
+{txt}(63026 missing values generated)
+
+{com}. replace gap_3=temp if development==2
+{txt}(66,242 real changes made)
+
+{com}. drop threshold temp
+{txt}
+{com}. * developed countries
+. generate byte threshold=recode(PR_GAP,15,30,50) if development==3
+{txt}(88,895 missing values generated)
+
+{com}. egen temp = group(threshold)
+{txt}(88895 missing values generated)
+
+{com}. replace gap_3=temp if development==3
+{txt}(40,381 real changes made, 8 to missing)
+
+{com}. drop threshold temp
+{txt}
+{com}. 
+. gen gap_2=0
+{txt}
+{com}. * developing countries
+. generate byte threshold=recode(PR_GAP,30,50) if development==1
+{txt}(106,624 missing values generated)
+
+{com}. egen temp = group(threshold)
+{txt}(106624 missing values generated)
+
+{com}. replace gap_2=temp if development==1
+{txt}(22,645 real changes made, 1 to missing)
+
+{com}. drop threshold temp
+{txt}
+{com}. * emerging countries
+. generate byte threshold=recode(PR_GAP,40,60) if development==2
+{txt}(63,026 missing values generated)
+
+{com}. egen temp = group(threshold)
+{txt}(63026 missing values generated)
+
+{com}. replace gap_2=temp if development==2
+{txt}(66,242 real changes made)
+
+{com}. drop threshold temp
+{txt}
+{com}. * developed countries
+. generate byte threshold=recode(PR_GAP,30,50) if development==3
+{txt}(88,895 missing values generated)
+
+{com}. egen temp = group(threshold)
+{txt}(88895 missing values generated)
+
+{com}. replace gap_2=temp if development==3
+{txt}(40,381 real changes made, 8 to missing)
+
+{com}. drop threshold temp
+{txt}
+{com}. 
+. 
+. *** development categories, with extra ASNA
+. gen devcat=development
+{txt}
+{com}. replace devcat=4 if subregionbroad==10 | subregionbroad==30
+{txt}(9,910 real changes made)
+
+{com}. label copy development devcat
+{txt}
+{com}. label define devcat 4 "ASNA countries", add
+{txt}
+{com}. label value devcat devcat
+{txt}
+{com}. 
+. gen lowincome=1 if development==1
+{txt}(106,623 missing values generated)
+
+{com}. replace lowincome=0 if lowincome==.
+{txt}(106,623 real changes made)
+
+{com}. label define lowincome 0 "Middle or high income country" 1 "Low income country"
+{txt}
+{com}. label value lowincome lowincome
+{txt}
+{com}. 
+. gen smartcat=1 if development<=1
+{txt}(106,623 missing values generated)
+
+{com}. replace smartcat=2 if gapcat2==0 & development>1
+{txt}(67,976 real changes made)
+
+{com}. replace smartcat=3 if gapcat2==1 & development>1
+{txt}(38,639 real changes made)
+
+{com}. label define smartcat 1 "Developing country" 2 "Low gap" 3 "High gap"
+{txt}
+{com}. label value smartcat smartcat
+{txt}
+{com}. 
+. gen prefcat=1 if development<=1
+{txt}(106,623 missing values generated)
+
+{com}. replace prefcat=2 if cat_pref==0 & development>1
+{txt}(54,127 real changes made)
+
+{com}. replace prefcat=3 if cat_pref==1 & development>1
+{txt}(52,377 real changes made)
+
+{com}. label define prefcat 1 "Developing country" 2 "Low male preference" 3 "High male preference"
+{txt}
+{com}. label value prefcat prefcat
+{txt}
+{com}. 
+. rename kids1 CHD
+{res}{txt}
+{com}. rename married RLS
+{res}{txt}
+{com}. rename housenum HHM
+{res}{txt}
+{com}. rename educ EDU
+{res}{txt}
+{com}. rename urban URB
+{res}{txt}
+{com}. rename comm COM
+{res}{txt}
+{com}. rename islam REL
+{res}{txt}
+{com}. rename pref_work PFW
+{res}{txt}
+{com}. rename pref_accept ACW
+{res}{txt}
+{com}. rename pref_opport OPP
+{res}{txt}
+{com}. rename challenge CHG
+{res}{txt}
+{com}. rename poor PVT
+{res}{txt}
+{com}. rename laworder LAW
+{res}{txt}
+{com}. rename jobclimate JCL
+{res}{txt}
+{com}. rename roads RDS
+{res}{txt}
+{com}. rename transport TRP
+{res}{txt}
+{com}. 
+. 
+. save "$PATH\Input data\GALLUP_clean.dta", replace
+{txt}file D:\Projects\Women participation\Econometric Analysis\Input data\GALLUP_clean.dta saved
+
+{com}. *
+. 
+. 
+. 
+. log close 
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}D:\Projects\Women participation\Econometric Analysis\Gallup_clean.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}31 Jan 2018, 14:32:21
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

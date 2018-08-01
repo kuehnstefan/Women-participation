@@ -1,0 +1,34 @@
+		(1)	(2)
+VARIABLES	LABELS	youth	se
+			
+1.pref_work	Prefer to work = 1	0.0997***	(0.0204)
+1.poor	poor = 1	0.0444**	(0.0222)
+2.poor	poor = 2	0.0398*	(0.0240)
+1.urban	Urban = 1	0.0172	(0.0120)
+1.pref_opport	Opportunity = 1, Better opportunity for women	-0.0128	(0.0164)
+3.pref_opport	Opportunity = 3, Worse opportunity for women	-0.0211	(0.0157)
+4.pref_opport	Opportunity = 4, 4	-0.0233	(0.0332)
+2.educ	educ = 2, Secondary education	0.0915***	(0.0206)
+3.educ	educ = 3, Tertiary education	0.2945***	(0.0326)
+laworder	laworder	-0.0174	(0.0217)
+1.roads	roads = 1	-0.0044	(0.0057)
+1.married	In Relationship = 1	0.0607***	(0.0214)
+1.kids1	Children = 1	-0.0116	(0.0189)
+1.internet	Internet = 1	0.0060	(0.0240)
+1.phone	Phone = 1	0.1034***	(0.0364)
+jobclimate	jobclimate	0.0526***	(0.0167)
+2.challenge	challenge = 2, Work-family balance	-0.0809***	(0.0240)
+3.challenge	challenge = 3, Lack of affordable care	-0.0646**	(0.0276)
+4.challenge	challenge = 4, Non-approval by family	-0.0775**	(0.0318)
+5.challenge	challenge = 5, Abuse, harassement, discrimination	-0.0581**	(0.0254)
+6.challenge	challenge = 6, Lack of good-paying jobs	-0.0485*	(0.0269)
+7.challenge	challenge = 7, Unequal pay	-0.0241	(0.0312)
+8.challenge	challenge = 8, Lack of transportation	-0.1313***	(0.0473)
+9.challenge	challenge = 9, Men prefered in job	-0.0685*	(0.0391)
+10.challenge	challenge = 10, Lack of skills	-0.0300	(0.0389)
+97.challenge	challenge = 97, 97	-0.0326	(0.0295)
+98.challenge	challenge = 98, 98	-0.1009***	(0.0252)
+			
+Observations		4,413	
+Standard errors in parentheses			
+*** p<0.01, ** p<0.05, * p<0.1			

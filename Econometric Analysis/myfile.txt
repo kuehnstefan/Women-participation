@@ -1,0 +1,232 @@
+	(1)	(2)	(3)
+	y1		
+VARIABLES	coef	aster	se
+			
+y1	.		.
+r2vs1.smartcat#c.housenum	0.056	*	0.032
+r3vs1.smartcat#c.housenum	0.045		0.032
+r2vs1.smartcat#c.housenum#c.housenum	-0.004		0.003
+r3vs1.smartcat#c.housenum#c.housenum	-0.006	*	0.003
+r2vs1.smartcat#2bn.educ	0.030		0.083
+r2vs1.smartcat#3.educ	0.536	**	0.209
+r3vs1.smartcat#2bn.educ	0.028		0.085
+r3vs1.smartcat#3.educ	0.657	***	0.212
+r2vs1.smartcat#1.kids1	-0.137	**	0.061
+r3vs1.smartcat#1.kids1	-0.065		0.064
+r2vs1.smartcat#1bn.pref_opport	-0.030		0.060
+r2vs1.smartcat#3.pref_opport	-0.068		0.061
+r2vs1.smartcat#4.pref_opport	-0.020		0.097
+r3vs1.smartcat#1bn.pref_opport	0.073		0.062
+r3vs1.smartcat#3.pref_opport	-0.100		0.067
+r3vs1.smartcat#4.pref_opport	-0.208	*	0.112
+r2vs1.smartcat#c.optimism	0.130	*	0.079
+r3vs1.smartcat#c.optimism	-0.166	**	0.084
+r2vs1.smartcat#1.pref_work#1.married	0.072		0.127
+r3vs1.smartcat#1.pref_work#1.married	0.126		0.128
+r2vs1.smartcat#1.pref_work#1.pref_accept	0.143		0.166
+r3vs1.smartcat#1.pref_work#1.pref_accept	0.114		0.167
+r2vs1.smartcat#1.pref_work#1.urban	-0.209		0.148
+r3vs1.smartcat#1.pref_work#1.urban	-0.300	**	0.149
+r2vs1.smartcat#1.pref_work#1.islam	0.169		0.145
+r3vs1.smartcat#1.pref_work#1.islam	-0.121		0.134
+r2vs1.smartcat#2bn.challenge	0.180		0.117
+r2vs1.smartcat#3.challenge	0.169		0.122
+r2vs1.smartcat#4.challenge	0.136		0.147
+r2vs1.smartcat#5.challenge	0.245	**	0.120
+r2vs1.smartcat#6.challenge	0.238	*	0.126
+r2vs1.smartcat#7.challenge	0.181		0.162
+r2vs1.smartcat#8.challenge	0.516	**	0.207
+r2vs1.smartcat#9.challenge	0.087		0.183
+r2vs1.smartcat#10.challenge	0.289	*	0.166
+r2vs1.smartcat#97.challenge	0.425	***	0.134
+r2vs1.smartcat#98.challenge	0.141		0.118
+r3vs1.smartcat#2bn.challenge	0.001		0.122
+r3vs1.smartcat#3.challenge	0.039		0.130
+r3vs1.smartcat#4.challenge	-0.077		0.150
+r3vs1.smartcat#5.challenge	0.091		0.127
+r3vs1.smartcat#6.challenge	0.130		0.136
+r3vs1.smartcat#7.challenge	0.027		0.173
+r3vs1.smartcat#8.challenge	0.351	*	0.208
+r3vs1.smartcat#9.challenge	-0.056		0.206
+r3vs1.smartcat#10.challenge	0.091		0.178
+r3vs1.smartcat#97.challenge	0.223		0.142
+r3vs1.smartcat#98.challenge	0.012		0.125
+r2vs1.smartcat#1.internet	0.224	**	0.108
+r3vs1.smartcat#1.internet	0.198	*	0.110
+r2vs1.smartcat#1.phone	-0.256	***	0.060
+r3vs1.smartcat#1.phone	-0.091		0.062
+r2vs1.smartcat#2bn.poor	-0.067		0.059
+r2vs1.smartcat#3.poor	-0.027		0.062
+r3vs1.smartcat#2bn.poor	-0.044		0.063
+r3vs1.smartcat#3.poor	0.049		0.066
+r1vs0.agecat#c.housenum	0.079	***	0.028
+r2vs0.agecat#c.housenum	0.148	***	0.036
+r1vs0.agecat#c.housenum#c.housenum	-0.009	***	0.003
+r2vs0.agecat#c.housenum#c.housenum	-0.015	***	0.004
+r1vs0.agecat#2bn.educ	0.027		0.044
+r1vs0.agecat#3.educ	-0.011		0.130
+r2vs0.agecat#2bn.educ	0.275	***	0.083
+r2vs0.agecat#3.educ	-0.321		0.205
+r1vs0.agecat#1.kids1	-0.039		0.047
+r2vs0.agecat#1.kids1	0.146	**	0.060
+r1vs0.agecat#1bn.pref_opport	0.018		0.044
+r1vs0.agecat#3.pref_opport	0.056		0.045
+r1vs0.agecat#4.pref_opport	-0.040		0.095
+r2vs0.agecat#1bn.pref_opport	0.117	*	0.063
+r2vs0.agecat#3.pref_opport	-0.025		0.065
+r2vs0.agecat#4.pref_opport	0.033		0.114
+r1vs0.agecat#c.optimism	0.061		0.059
+r2vs0.agecat#c.optimism	0.306	***	0.081
+r1vs0.agecat#1.pref_work#1.married	-0.030		0.121
+r2vs0.agecat#1.pref_work#1.married	-0.194		0.132
+r1vs0.agecat#1.pref_work#1.pref_accept	-0.042		0.140
+r2vs0.agecat#1.pref_work#1.pref_accept	0.049		0.182
+r1vs0.agecat#1.pref_work#1.urban	-0.150		0.128
+r2vs0.agecat#1.pref_work#1.urban	-0.071		0.152
+r1vs0.agecat#1.pref_work#1.islam	-0.031		0.127
+r2vs0.agecat#1.pref_work#1.islam	-0.250		0.156
+r1vs0.agecat#2bn.challenge	0.274	***	0.078
+r1vs0.agecat#3.challenge	0.126		0.087
+r1vs0.agecat#4.challenge	0.084		0.103
+r1vs0.agecat#5.challenge	0.157	*	0.082
+r1vs0.agecat#6.challenge	0.212	**	0.089
+r1vs0.agecat#7.challenge	0.176		0.110
+r1vs0.agecat#8.challenge	0.063		0.151
+r1vs0.agecat#9.challenge	0.172		0.135
+r1vs0.agecat#10.challenge	0.162		0.124
+r1vs0.agecat#97.challenge	0.110		0.095
+r1vs0.agecat#98.challenge	0.208	**	0.082
+r2vs0.agecat#2bn.challenge	0.117		0.121
+r2vs0.agecat#3.challenge	0.117		0.130
+r2vs0.agecat#4.challenge	0.113		0.158
+r2vs0.agecat#5.challenge	0.027		0.126
+r2vs0.agecat#6.challenge	-0.005		0.133
+r2vs0.agecat#7.challenge	0.048		0.167
+r2vs0.agecat#8.challenge	0.209		0.210
+r2vs0.agecat#9.challenge	0.175		0.202
+r2vs0.agecat#10.challenge	0.213		0.180
+r2vs0.agecat#97.challenge	-0.218		0.138
+r2vs0.agecat#98.challenge	0.126		0.123
+r1vs0.agecat#1.internet	0.194	***	0.051
+r2vs0.agecat#1.internet	0.187	*	0.108
+r1vs0.agecat#1.phone	-0.085		0.052
+r2vs0.agecat#1.phone	-0.042		0.066
+r1vs0.agecat#2bn.poor	-0.077	*	0.044
+r1vs0.agecat#3.poor	-0.121	**	0.048
+r2vs0.agecat#2bn.poor	0.049		0.063
+r2vs0.agecat#3.poor	0.034		0.067
+r2vs1.smartcat#r1vs0.agecat#c.housenum	0.152	**	0.074
+r2vs1.smartcat#r2vs0.agecat#c.housenum	0.281	***	0.087
+r3vs1.smartcat#r1vs0.agecat#c.housenum	-0.038		0.055
+r3vs1.smartcat#r2vs0.agecat#c.housenum	0.052		0.090
+r2vs1.smartcat#r1vs0.agecat#c.housenum#c.housenum	-0.013		0.009
+r2vs1.smartcat#r2vs0.agecat#c.housenum#c.housenum	-0.021	**	0.009
+r3vs1.smartcat#r1vs0.agecat#c.housenum#c.housenum	0.002		0.004
+r3vs1.smartcat#r2vs0.agecat#c.housenum#c.housenum	-0.012		0.009
+r2vs1.smartcat#r1vs0.agecat#2bn.educ	-0.548	***	0.108
+r2vs1.smartcat#r1vs0.agecat#3.educ	-1.266	***	0.367
+r2vs1.smartcat#r2vs0.agecat#2bn.educ	-1.292	***	0.231
+r2vs1.smartcat#r2vs0.agecat#3.educ	-0.563		0.597
+r3vs1.smartcat#r1vs0.agecat#2bn.educ	-0.707	***	0.116
+r3vs1.smartcat#r1vs0.agecat#3.educ	-1.293	***	0.374
+r3vs1.smartcat#r2vs0.agecat#2bn.educ	-1.305	***	0.240
+r3vs1.smartcat#r2vs0.agecat#3.educ	-0.731		0.606
+r2vs1.smartcat#r1vs0.agecat#1.kids1	-0.036		0.123
+r2vs1.smartcat#r2vs0.agecat#1.kids1	0.199		0.157
+r3vs1.smartcat#r1vs0.agecat#1.kids1	0.072		0.128
+r3vs1.smartcat#r2vs0.agecat#1.kids1	0.379	**	0.166
+r2vs1.smartcat#r1vs0.agecat#1bn.pref_opport	0.321	***	0.109
+r2vs1.smartcat#r1vs0.agecat#3.pref_opport	0.029		0.110
+r2vs1.smartcat#r1vs0.agecat#4.pref_opport	0.324		0.212
+r2vs1.smartcat#r2vs0.agecat#1bn.pref_opport	0.401	**	0.163
+r2vs1.smartcat#r2vs0.agecat#3.pref_opport	-0.007		0.169
+r2vs1.smartcat#r2vs0.agecat#4.pref_opport	0.326		0.266
+r3vs1.smartcat#r1vs0.agecat#1bn.pref_opport	0.102		0.112
+r3vs1.smartcat#r1vs0.agecat#3.pref_opport	0.013		0.121
+r3vs1.smartcat#r1vs0.agecat#4.pref_opport	0.086		0.249
+r3vs1.smartcat#r2vs0.agecat#1bn.pref_opport	0.114		0.169
+r3vs1.smartcat#r2vs0.agecat#3.pref_opport	-0.127		0.185
+r3vs1.smartcat#r2vs0.agecat#4.pref_opport	0.189		0.311
+r2vs1.smartcat#r1vs0.agecat#c.optimism	-0.315	**	0.144
+r2vs1.smartcat#r2vs0.agecat#c.optimism	-0.355	*	0.210
+r3vs1.smartcat#r1vs0.agecat#c.optimism	-0.063		0.154
+r3vs1.smartcat#r2vs0.agecat#c.optimism	-0.336		0.225
+r2vs1.smartcat#r1vs0.agecat#1.pref_work#1.married	0.394		0.310
+r2vs1.smartcat#r2vs0.agecat#1.pref_work#1.married	0.374		0.341
+r3vs1.smartcat#r1vs0.agecat#1.pref_work#1.married	0.151		0.303
+r3vs1.smartcat#r2vs0.agecat#1.pref_work#1.married	0.236		0.344
+r2vs1.smartcat#r1vs0.agecat#1.pref_work#1.pref_accept	0.054		0.360
+r2vs1.smartcat#r2vs0.agecat#1.pref_work#1.pref_accept	0.241		0.465
+r3vs1.smartcat#r1vs0.agecat#1.pref_work#1.pref_accept	-0.025		0.332
+r3vs1.smartcat#r2vs0.agecat#1.pref_work#1.pref_accept	0.251		0.470
+r2vs1.smartcat#r1vs0.agecat#1.pref_work#1.urban	0.336		0.345
+r2vs1.smartcat#r2vs0.agecat#1.pref_work#1.urban	0.091		0.413
+r3vs1.smartcat#r1vs0.agecat#1.pref_work#1.urban	0.432		0.337
+r3vs1.smartcat#r2vs0.agecat#1.pref_work#1.urban	-0.019		0.416
+r2vs1.smartcat#r1vs0.agecat#1.pref_work#1.islam	-0.114		0.331
+r2vs1.smartcat#r2vs0.agecat#1.pref_work#1.islam	0.330		0.404
+r3vs1.smartcat#r1vs0.agecat#1.pref_work#1.islam	-0.342		0.293
+r3vs1.smartcat#r2vs0.agecat#1.pref_work#1.islam	-0.086		0.372
+r2vs1.smartcat#r1vs0.agecat#2bn.challenge	-0.346	*	0.199
+r2vs1.smartcat#r1vs0.agecat#3.challenge	-0.168		0.213
+r2vs1.smartcat#r1vs0.agecat#4.challenge	-0.561	**	0.261
+r2vs1.smartcat#r1vs0.agecat#5.challenge	-0.328		0.206
+r2vs1.smartcat#r1vs0.agecat#6.challenge	-0.353		0.219
+r2vs1.smartcat#r1vs0.agecat#7.challenge	-0.295		0.275
+r2vs1.smartcat#r1vs0.agecat#8.challenge	0.195		0.403
+r2vs1.smartcat#r1vs0.agecat#9.challenge	-0.214		0.326
+r2vs1.smartcat#r1vs0.agecat#10.challenge	-0.679	**	0.301
+r2vs1.smartcat#r1vs0.agecat#97.challenge	-0.207		0.240
+r2vs1.smartcat#r1vs0.agecat#98.challenge	-0.284		0.205
+r2vs1.smartcat#r2vs0.agecat#2bn.challenge	0.195		0.329
+r2vs1.smartcat#r2vs0.agecat#3.challenge	0.285		0.343
+r2vs1.smartcat#r2vs0.agecat#4.challenge	-0.193		0.412
+r2vs1.smartcat#r2vs0.agecat#5.challenge	0.216		0.330
+r2vs1.smartcat#r2vs0.agecat#6.challenge	0.365		0.351
+r2vs1.smartcat#r2vs0.agecat#7.challenge	0.012		0.449
+r2vs1.smartcat#r2vs0.agecat#8.challenge	0.460		0.568
+r2vs1.smartcat#r2vs0.agecat#9.challenge	-0.116		0.507
+r2vs1.smartcat#r2vs0.agecat#10.challenge	0.253		0.461
+r2vs1.smartcat#r2vs0.agecat#97.challenge	0.235		0.371
+r2vs1.smartcat#r2vs0.agecat#98.challenge	0.321		0.326
+r3vs1.smartcat#r1vs0.agecat#2bn.challenge	-0.276		0.206
+r3vs1.smartcat#r1vs0.agecat#3.challenge	-0.232		0.226
+r3vs1.smartcat#r1vs0.agecat#4.challenge	0.011		0.253
+r3vs1.smartcat#r1vs0.agecat#5.challenge	-0.127		0.214
+r3vs1.smartcat#r1vs0.agecat#6.challenge	-0.296		0.238
+r3vs1.smartcat#r1vs0.agecat#7.challenge	-0.220		0.304
+r3vs1.smartcat#r1vs0.agecat#8.challenge	0.557		0.384
+r3vs1.smartcat#r1vs0.agecat#9.challenge	-0.097		0.369
+r3vs1.smartcat#r1vs0.agecat#10.challenge	-0.390		0.315
+r3vs1.smartcat#r1vs0.agecat#97.challenge	-0.172		0.251
+r3vs1.smartcat#r1vs0.agecat#98.challenge	-0.228		0.215
+r3vs1.smartcat#r2vs0.agecat#2bn.challenge	0.118		0.342
+r3vs1.smartcat#r2vs0.agecat#3.challenge	0.106		0.362
+r3vs1.smartcat#r2vs0.agecat#4.challenge	0.068		0.420
+r3vs1.smartcat#r2vs0.agecat#5.challenge	0.323		0.351
+r3vs1.smartcat#r2vs0.agecat#6.challenge	0.286		0.378
+r3vs1.smartcat#r2vs0.agecat#7.challenge	-0.120		0.480
+r3vs1.smartcat#r2vs0.agecat#8.challenge	0.753		0.573
+r3vs1.smartcat#r2vs0.agecat#9.challenge	-0.365		0.576
+r3vs1.smartcat#r2vs0.agecat#10.challenge	0.385		0.494
+r3vs1.smartcat#r2vs0.agecat#97.challenge	0.107		0.389
+r3vs1.smartcat#r2vs0.agecat#98.challenge	0.365		0.344
+r2vs1.smartcat#r1vs0.agecat#1.internet	0.243	*	0.130
+r2vs1.smartcat#r2vs0.agecat#1.internet	0.600	*	0.311
+r3vs1.smartcat#r1vs0.agecat#1.internet	0.301	**	0.134
+r3vs1.smartcat#r2vs0.agecat#1.internet	0.333		0.317
+r2vs1.smartcat#r1vs0.agecat#1.phone	0.050		0.124
+r2vs1.smartcat#r2vs0.agecat#1.phone	0.011		0.159
+r3vs1.smartcat#r1vs0.agecat#1.phone	0.175		0.124
+r3vs1.smartcat#r2vs0.agecat#1.phone	-0.154		0.168
+r2vs1.smartcat#r1vs0.agecat#2bn.poor	-0.136		0.110
+r2vs1.smartcat#r1vs0.agecat#3.poor	-0.057		0.114
+r2vs1.smartcat#r2vs0.agecat#2bn.poor	-0.075		0.164
+r2vs1.smartcat#r2vs0.agecat#3.poor	0.282	*	0.168
+r3vs1.smartcat#r1vs0.agecat#2bn.poor	0.075		0.114
+r3vs1.smartcat#r1vs0.agecat#3.poor	-0.055		0.123
+r3vs1.smartcat#r2vs0.agecat#2bn.poor	-0.236		0.173
+r3vs1.smartcat#r2vs0.agecat#3.poor	0.005		0.182
+			
+Observations	.		
+*** p<0.01, ** p<0.05, * p<0.1			

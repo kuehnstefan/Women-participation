@@ -1,0 +1,69 @@
+		(1)	(2)	(3)	(4)
+VARIABLES	LABELS	Total	Developing	Low gap	High gap
+					
+1.agecat	agecat = 1, Age 25-54	0.19***	0.18***	0.24***	0.22***
+		(0.01)	(0.01)	(0.02)	(0.03)
+2.agecat	agecat = 2, Age 55+	-0.05***	-0.03***	-0.10***	-0.05
+		(0.01)	(0.01)	(0.02)	(0.04)
+2.educ	educ = 2, Secondary education	0.04***	0.02***	0.10***	0.08***
+		(0.01)	(0.01)	(0.02)	(0.03)
+3.educ	educ = 3, Tertiary education	0.17***	0.17***	0.16***	0.21***
+		(0.01)	(0.01)	(0.02)	(0.03)
+1.pref_work	Prefer to work = 1	0.17***	0.15***	0.19***	0.32***
+		(0.01)	(0.01)	(0.01)	(0.02)
+1.kids1	Children = 1	-0.02***	-0.01**	-0.02**	-0.02
+		(0.01)	(0.01)	(0.01)	(0.02)
+1.married	In Relationship = 1	0.00	0.00	0.02**	-0.06***
+		(0.00)	(0.01)	(0.01)	(0.02)
+1.pref_opport	Opportunity = 1, Better opportunity for women	0.03***	0.02***	0.05***	0.03
+		(0.01)	(0.01)	(0.02)	(0.02)
+3.pref_opport	Opportunity = 3, Worse opportunity for women	-0.00	0.00	-0.01	-0.02
+		(0.01)	(0.01)	(0.01)	(0.02)
+optimism	Optimistic	0.04***	0.01	0.10***	0.03
+		(0.01)	(0.01)	(0.02)	(0.03)
+1.respect	Women treated with respect = 1	0.00	0.00	0.02*	-0.01
+		(0.01)	(0.01)	(0.01)	(0.02)
+1.internet	Internet = 1	0.08***	0.05***	0.15***	0.12***
+		(0.01)	(0.01)	(0.02)	(0.03)
+1.phone	Phone = 1	0.04***	0.06***	-0.06	0.12*
+		(0.01)	(0.01)	(0.04)	(0.07)
+2.poor	poor = 2, Moderatly poor	0.04***	0.05***	0.02	0.03
+		(0.01)	(0.01)	(0.01)	(0.02)
+3.poor	poor = 3, Severely poor	0.07***	0.08***	0.05**	0.03
+		(0.01)	(0.01)	(0.02)	(0.03)
+1.urban	Urban = 1	-0.01*	-0.02***	0.01	0.01
+		(0.00)	(0.01)	(0.01)	(0.02)
+1.pref_accept	Acceptible to work = 1	0.03***	0.02***	0.05*	0.02
+		(0.01)	(0.01)	(0.03)	(0.04)
+2.challenge	challenge = 2, Work-family balance	-0.03***	-0.04***	0.01	-0.07*
+		(0.01)	(0.01)	(0.02)	(0.04)
+3.challenge	challenge = 3, Lack of affordable care	-0.04***	-0.03***	-0.03	-0.10**
+		(0.01)	(0.01)	(0.03)	(0.05)
+4.challenge	challenge = 4, Non-approval by family	-0.06***	-0.05***	-0.05	-0.12**
+		(0.02)	(0.02)	(0.05)	(0.06)
+5.challenge	challenge = 5, Abuse, harassement, discrimination	-0.03***	-0.03**	-0.01	-0.06
+		(0.01)	(0.01)	(0.02)	(0.05)
+6.challenge	challenge = 6, Lack of good-paying jobs	-0.00	-0.01	0.02	-0.02
+		(0.01)	(0.01)	(0.02)	(0.05)
+7.challenge	challenge = 7, Unequal pay	-0.00	-0.01	0.02	-0.03
+		(0.01)	(0.02)	(0.02)	(0.05)
+8.challenge	challenge = 8, Lack of transportation	-0.04*	-0.07***	0.06	-0.06
+		(0.02)	(0.02)	(0.07)	(0.06)
+9.challenge	challenge = 9, Men prefered in job	-0.02	-0.02	-0.02	-0.04
+		(0.02)	(0.02)	(0.03)	(0.06)
+10.challenge	challenge = 10, Lack of skills	-0.01	-0.01	0.01	-0.14
+		(0.02)	(0.02)	(0.04)	(0.09)
+1.religion	Religion = 1, Other	0.01	0.01	0.02	0.01
+		(0.02)	(0.02)	(0.02)	(0.04)
+2.religion	Religion = 2, Christian	-0.01	-0.01	-0.02	0.02
+		(0.02)	(0.02)	(0.01)	(0.04)
+3.religion	Religion = 3, Islam	-0.08***	-0.07***	-0.09***	-0.10
+		(0.03)	(0.03)	(0.03)	(0.32)
+4o.religion	Religion = 4, omitted	-			-
+					
+4.religion	Religion = 4, Hinduism		-0.02	0.01	
+			(0.04)	(0.07)	
+					
+Observations		59,153	41,176	14,162	3,815
+Standard errors in parentheses					
+*** p<0.01, ** p<0.05, * p<0.1					

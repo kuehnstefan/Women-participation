@@ -1,0 +1,412 @@
+% Encoding: windows-1252
+
+
+@Book{ilogallup2017,
+  Title                    = {Towards a better future for women and work: {V}oices of women and men},
+  Author                   = {{Gallup; International Labour Organization (ILO)}},
+  Publisher                = {Geneva and Washington},
+  Year                     = {2017},
+
+  Owner                    = {kuehn},
+  Timestamp                = {2017.05.29}
+}
+
+@Article{attanasio2005female,
+  author    = {Attanasio, Orazio and Low, Hamish and S{\'a}nchez-Marcos, Virginia},
+  title     = {Female labor supply as insurance against idiosyncratic risk},
+  journal   = {Journal of the European Economic Association},
+  year      = {2005},
+  volume    = {3},
+  number    = {2-3},
+  pages     = {755--764},
+  keywords  = {business cycles},
+  publisher = {Wiley Online Library},
+}
+
+@Article{badgett1999assigning,
+  author    = {Badgett, MV and Folbre, Nancy},
+  title     = {Assigning care: Gender norms and economic outcomes},
+  journal   = {International Labour Review},
+  year      = {1999},
+  volume    = {138},
+  number    = {3},
+  pages     = {311--326},
+  publisher = {Wiley Online Library},
+}
+
+@Book{bardhan1984land,
+  title     = {Land, labor, and rural poverty: Essays in development economics},
+  publisher = {Columbia University Press},
+  year      = {1984},
+  author    = {Bardhan, Pranab K},
+}
+
+@Article{bhalotra2010dynamics,
+  author   = {Bhalotra, Sonia R and Umana-Aponte, Marcela},
+  title    = {The dynamics of women's labour supply in developing countries},
+  year     = {2010},
+  abstract = {This paper investigates cyclicality in women's labour supply motivated by the hypothesis that it contributes to smoothing household consumption in environments characterized by income volatility. We use comparable individual data on about 1.1 million women in 63 developing and transition countries merged with country-level panel data on GDP during 1986-2006. The scope of these data is unprecedented in the small but growing literature on labour markets in developing countries. We find that the within-country relationship of women's employment and income is, on average, negative in Asia and Latin America but positive in Africa. We suggest that amongst reasons why African women behave differently are that the conventional family structure with income pooling is less the norm, there are fewer opportunities for paid employment, and aggregate income shocks are more closely tied to rainfall variation. The findings are robust to controls for country-specific trends and potentially correlated shocks. In Asia and Latin America, characteristics that strengthen counter-cyclical responses include low education, being married, being married to men with low education, low wealth, no landownings, rural residence and fertility. These findings suggest that insurance motives underpin the dynamics of women's work participation. Examination of cyclicality in the distribution of employment across types suggests that recessions in every region are associated with a rise in self-employment amongst women. In Asia and Latin America, there is a parallel rise in paid employment and a sharp drop in non-employment. In Africa, there is a decline in paid employment which overwhelms the rise in self-employment and this is how total employment comes to decline. The results have potentially important implications for understanding labour markets, fertility timing and child outcomes.},
+  keywords = {business cycles},
+}
+
+@TechReport{umana2012women,
+  author = {Uma{\~n}a-Aponte, Marcela and Bhalotra, Sonia R and others},
+  title  = {Women? s Labour Supply and Household Insurance in Africa},
+  year   = {2012},
+}
+
+@TechReport{blau2016gender,
+  author      = {Blau, Francine D and Kahn, Lawrence M},
+  title       = {The gender wage gap: Extent, trends, and explanations},
+  institution = {National Bureau of Economic Research},
+  year        = {2016},
+}
+
+@Article{budig2001wage,
+  author    = {Budig, Michelle J and England, Paula},
+  title     = {The wage penalty for motherhood},
+  journal   = {American sociological review},
+  year      = {2001},
+  pages     = {204--225},
+  publisher = {JSTOR},
+}
+
+@Book{cassirer2007expanding,
+  title     = {Expanding women's employment opportunities: Informal economy workers and the need for childcare},
+  publisher = {ILO Geneva},
+  year      = {2007},
+  author    = {Cassirer, Naomi and Addati, Laura},
+}
+
+@Article{england1999cost,
+  author    = {England, Paula and Folbre, Nancy},
+  title     = {The cost of caring},
+  journal   = {The Annals of the American Academy of Political and Social Science},
+  year      = {1999},
+  volume    = {561},
+  number    = {1},
+  pages     = {39--51},
+  publisher = {Sage Publications Sage CA: Thousand Oaks, CA},
+}
+
+@Article{goldin2014grand,
+  author    = {Goldin, Claudia},
+  title     = {A grand gender convergence: Its last chapter},
+  journal   = {The American Economic Review},
+  year      = {2014},
+  volume    = {104},
+  number    = {4},
+  pages     = {1091--1119},
+  publisher = {American Economic Association},
+}
+
+@Article{hepple2001equality,
+  author    = {Hepple, Bob},
+  title     = {Equality and empowerment for decent work},
+  journal   = {International Labour Review},
+  year      = {2001},
+  volume    = {140},
+  number    = {1},
+  pages     = {5--18},
+  publisher = {Wiley Online Library},
+}
+
+@Article{hook2010gender,
+  author    = {Hook, Jennifer L},
+  title     = {Gender Inequality in the Welfare State: Sex Segregation in Housework, 1965--2003 1},
+  journal   = {American journal of sociology},
+  year      = {2010},
+  volume    = {115},
+  number    = {5},
+  pages     = {1480--1523},
+  publisher = {The University of Chicago Press},
+}
+
+@Article{jaumotte2003female,
+  author = {Jaumotte, Florence},
+  title  = {Female labour force participation: past trends and main determinants in OECD countries},
+  year   = {2003},
+}
+
+@Article{kabeer2005gender,
+  author    = {Kabeer, Naila},
+  title     = {Gender equality and women's empowerment: A critical analysis of the third millennium development goal 1},
+  journal   = {Gender \& Development},
+  year      = {2005},
+  volume    = {13},
+  number    = {1},
+  pages     = {13--24},
+  publisher = {Taylor \& Francis},
+}
+
+@Book{kapsos2014female,
+  title     = {Why is female labour force participation declining so sharply in India?},
+  publisher = {ILO},
+  year      = {2014},
+  author    = {Kapsos, Steven and Silbermann, Andrea and Bourmpoula, Evangelia},
+}
+
+@Article{klasen2012push,
+  author = {Klasen, Stephan and Pieters, Janneke},
+  title  = {Push or pull? Drivers of female labor force participation during India's economic boom},
+  year   = {2012},
+}
+
+@Article{mammen2000women,
+  author    = {Mammen, Kristin and Paxson, Christina},
+  title     = {Women's work and economic development},
+  journal   = {The Journal of Economic Perspectives},
+  year      = {2000},
+  volume    = {14},
+  number    = {4},
+  pages     = {141--164},
+  abstract  = {This essay discusses how the role of women in the labor force varies with the
+ level of economic development. Although there is diversity across countries at 
+similar income levels in how much women work and the types ofjobs they perform,
+ several clear patterns emerge from the data. The first section sketches a model of
+ how women's labor supply and type of work are affected by the level of develop-
+ ment. The second section presents evidence from cross-country data on these
+ issues. The third section uses information from two developing countries, India and
+ Thailand, to examine whether the relationships between work status and develop-
+ ment that are observed in the cross-country data are consistent with patterns within
+ countries. These two countries are quite different from each other, both in their
+ recent growth experience and in their historical treatment of women, and make for
+ an interesting and useful comparison. The fourth section discusses recent literature
+ on resource allocation to women within households in poor countries.},
+  keywords  = {rank5, u-shape},
+  publisher = {JSTOR},
+}
+
+@Book{nussbaum2011creating,
+  title     = {Creating capabilities},
+  publisher = {Harvard University Press},
+  year      = {2011},
+  author    = {Nussbaum, Martha C},
+}
+
+@Article{pastore2013ora,
+  author = {Pastore, Francesco and Tenaglia, Simona},
+  title  = {Ora et non labora? A test of the impact of religion on female labor supply},
+  year   = {2013},
+}
+
+@Book{tinker1990persistent,
+  title     = {Persistent inequalities: Women and world development},
+  publisher = {Oxford University Press New York},
+  year      = {1990},
+  author    = {Sen, A.K.},
+}
+
+@Article{sen1995agency,
+  author    = {Sen, Amartya},
+  title     = {Agency and well-being: the development agenda.},
+  year      = {1995},
+  publisher = {New York New York United Nations Development Fund for Women [UNIFEM] 1995.},
+}
+
+@Book{sen2001development,
+  title     = {Development as freedom},
+  publisher = {Oxford Paperbacks},
+  year      = {2001},
+  author    = {Sen, Amartya},
+}
+
+@InProceedings{tansel2001economic,
+  author       = {Tansel, Ays{\i}t and others},
+  title        = {Economic development and female labor force participation in Turkey: time-series evidence and cross-province estimates},
+  year         = {2001},
+  organization = {Citeseer},
+  abstract     = {Recently, several researchers hypothesized that female labor force
+participation rate exhibits a U-shape during the process of economic development.
+This paper provides time series evidence on female labor force participation rates in
+Turkey and considers its cross-provincial determinants. Time series evidence shows
+that after a period of sharp decline the female labor force participation rates have
+exhibited a slowdown in the rate of decline recently. An upturn in this rate may be
+expected during the coming decades. In the cross-provincial determinants of female
+labor force participation the measure of development used is per capita Gross
+Provincial Product. A quadratic term in per capita Gross Provincial Product and
+other determinants are included in the models estimated. The models are estimated
+using data for 67 provinces for three time points-1980, 1985 and 1990. The results
+affirm the U-shaped impact of economic development. Further, unemployment had
+a considerable discouraging effect on female labor force participation while the
+impact of education was strongly positive. The hidden unemployment computations
+indicate that urban female unemployment rate is underestimated and the
+discouraged-worker effect for women is substantial.},
+  keywords     = {u-shape, rank5},
+}
+
+@Article{secretaryleave,
+  author = {SECRETARY-GENERAL’S, UN},
+  title  = {LEAVE NO ONE BEHIND A CALL TO ACTION FOR GENDER EQUALITY AND WOMEN’S ECONOMIC EMPOWERMENT},
+}
+
+@Article{goldin1995u,
+  author    = {Goldin, Claudia and Schultz, TP},
+  title     = {The U-Shaped Female Labor Force Function in Economic Development and Economic History},
+  journal   = {Investment in Women’s Human Capital and Economic Development},
+  year      = {1995},
+  publisher = {University of Chicago Press},
+}
+
+@Article{killingsworth1986female,
+  author        = {Killingsworth, Mark R and Heckman, James J},
+  title         = {Female labor supply: A survey},
+  journal       = {Handbook of labor economics},
+  year          = {1986},
+  volume        = {1},
+  pages         = {103--204},
+  __markedentry = {[yoons:4]},
+  abstract      = {This chapter presents a survey on female labor supply. The chapter surveys theoretical and empirical work on the labor supply of women, with special reference to women in Western economies, primarily the United States, in modern times. The behavior of female labor supply has important implications for many other phenomena, including marriage, fertility, divorce, the distribution of family earnings and male-female wage differentials. The labor supply of women is also of interest, because of the technical questions it poses. For example, because many women do not work, corner solutions are at least potentially a very important issue in both the theoretical and empirical analysis of female labor supply, even though in other contexts (for example, studies of consumer demand) corner solutions are often ignored. The chapter presents some “stylized facts” about female labor supply, and then discusses a number of theoretical models of special interest for understanding female labor supply. After considering empirical studies of the labor supply of women, the chapter concludes with some suggestions for future research. The chapter discusses major trends and cyclical patterns in time-series data, and then examines cross-sectional phenomena.},
+  keywords      = {lifecycle},
+  publisher     = {Elsevier},
+}
+
+@Article{ridgeway2013intersecting,
+  author        = {Ridgeway, Cecilia L and Kricheli-Katz, Tamar},
+  title         = {Intersecting cultural beliefs in social relations: Gender, race, and class binds and freedoms},
+  journal       = {Gender \& Society},
+  year          = {2013},
+  volume        = {27},
+  number        = {3},
+  pages         = {294--318},
+  __markedentry = {[yoons:3]},
+  keywords      = {social norms},
+  publisher     = {SAGE Publications Sage CA: Los Angeles, CA},
+}
+
+@Article{Jaumotte2003,
+  author = {Jaumotte, Florence},
+  title  = {Female labour force participation: past trends and main determinants in OECD countries},
+  year   = {2003},
+}
+
+@Article{alesina2010power,
+  author        = {Alesina, Alberto and Giuliano, Paola},
+  title         = {The power of the family},
+  journal       = {Journal of Economic growth},
+  year          = {2010},
+  volume        = {15},
+  number        = {2},
+  pages         = {93--125},
+  __markedentry = {[yoons:2]},
+  keywords      = {intergenerational},
+  publisher     = {Springer},
+}
+
+@Article{gaddis2014economic,
+  author    = {Gaddis, Isis and Klasen, Stephan},
+  title     = {Economic development, structural change, and women’s labor force participation},
+  journal   = {Journal of Population Economics},
+  year      = {2014},
+  volume    = {27},
+  number    = {3},
+  pages     = {639--681},
+  abstract  = {A sizable literature claims that female labor force participation (FLFP) follows a U-shaped trend as countries develop due to structural change, education, and fertility dynamics. We show that empirical support for this secular trend is feeble and depends on the data sources used, especially GDP estimates. The U also vanishes under dynamic panel estimations. Moreover, cross-country differences in levels of FLFP related to historical contingencies are more important than the muted U patterns found in some specifications. Given the large error margins in international GDP estimates and the sensitivity of the U relationship, we propose a more direct approach to explore the effect of structural change on FLFP using sector-specific growth rates. The results suggest that structural change affects FLFP consistent with a U pattern, but the effects are small. We conclude that the feminization U hypothesis as an overarching secular trend driving FLFP in the development process has little empirical support.},
+  keywords  = {u-shape},
+  publisher = {Springer},
+}
+
+@Article{klasen2015explains,
+  author    = {Klasen, Stephan and Pieters, Janneke},
+  title     = {What explains the stagnation of female labor force participation in urban India?},
+  journal   = {The World Bank Economic Review},
+  year      = {2015},
+  pages     = {lhv003},
+  keywords  = {rank4},
+  publisher = {World Bank},
+}
+
+@Article{attanasio2008explaining,
+  author    = {Attanasio, Orazio and Low, Hamish and S{\'a}nchez-Marcos, Virginia},
+  title     = {Explaining changes in female labor supply in a life-cycle model},
+  journal   = {The American Economic Review},
+  year      = {2008},
+  volume    = {98},
+  number    = {4},
+  pages     = {1517--1552},
+  abstract  = {This paper studies the life-cycle labor supply of three cohorts of American
+women, born in the 1930s, 1940s, and 1950s. We focus on the increase in labor
+supply of mothers between the 1940s and 1950s cohorts. We construct a lifecycle
+model of female participation and savings, and calibrate the model to
+match the behavior of the middle cohort. We investigate which changes in the
+determinants of labor supply account for the increases in participation early in
+the life-cycle observed for the youngest cohort. A combination of a reduction
+in the cost of children alongside a reduction in the wage-gender gap is needed.},
+  keywords  = {life-cycle},
+  publisher = {American Economic Association},
+}
+
+@TechReport{jones2008fertility,
+  author      = {Jones, Larry E and Schoonbroodt, Alice and Tertilt, Michele},
+  title       = {Fertility theories: can they explain the negative fertility-income relationship?},
+  institution = {National Bureau of Economic Research},
+  year        = {2008},
+  keywords    = {fertility},
+}
+
+@Article{fogli2011nature,
+  author    = {Fogli, Alessandra and Veldkamp, Laura},
+  title     = {Nature or nurture? Learning and the geography of female labor force participation},
+  journal   = {Econometrica},
+  year      = {2011},
+  volume    = {79},
+  number    = {4},
+  pages     = {1103--1138},
+  abstract  = {One of the most dramatic economic transformations of the past century has been the entry of women into the labor force. While many theories explain why this change took place, we investigate the process of transition itself. We argue that local information transmission generates changes in participation that are geographically heterogeneous, locally correlated, and smooth in the aggregate, just like those observed in our data. In our model, women learn about the effects of maternal employment on children by observing nearby employed women. When few women participate in the labor force, data are scarce and participation rises slowly. As information accumulates in some regions, the effects of maternal employment become less uncertain and more women in that region participate. Learning accelerates, labor force participation rises faster, and regional participation rates diverge. Eventually, information diffuses throughout the economy, beliefs converge to the truth, participation flattens out, and regions become more similar again. To investigate the empirical relevance of our theory, we use a new county-level data set to compare our calibrated model to the time series and geographic patterns of participation.},
+  publisher = {Wiley Online Library},
+}
+
+@Article{meghir2011earnings,
+  author    = {Meghir, Costas and Pistaferri, Luigi},
+  title     = {Earnings, consumption and life cycle choices},
+  journal   = {Handbook of Labor Economics},
+  year      = {2011},
+  volume    = {4},
+  pages     = {773--854},
+  abstract  = {We discuss recent developments in the literature that studies how the dynamics of earnings and wages affect consumption choices over the life cycle. We start by analyzing the theoretical impact of income changes on consumption—highlighting the role of persistence, information, size and insurability of changes in economic resources. We next examine the empirical contributions, distinguishing between papers that use only income data and those that use both income and consumption data. The latter do this for two purposes. First, one can make explicit assumptions about the structure of credit and insurance markets and identify the income process or the information set of the individuals. Second, one can assume that the income process or the amount of information that consumers have are known and test the implications of the theory. In general there is an identification issue that has only recently being addressed with better data or better “experiments”. We conclude with a discussion of the literature that endogenizes people’s earnings and therefore change the nature of risk faced by households.},
+  publisher = {Elsevier},
+}
+
+@Article{blundell2016female,
+  author    = {Blundell, Richard and Costa Dias, Monica and Meghir, Costas and Shaw, Jonathan},
+  title     = {Female labor supply, human capital, and welfare reform},
+  journal   = {Econometrica},
+  year      = {2016},
+  volume    = {84},
+  number    = {5},
+  pages     = {1705--1753},
+  abstract  = {We consider the impact of Tax credits and income support programs on female education choice, employment,
+hours and human capital accumulation over the life-cycle. We thus analyze both the short run incentive
+effects and the longer run implications of such programs. By allowing for risk aversion and savings
+we are also able to quantify the insurance value of alternative programs. We find important incentive
+effects on education choice, and labor supply, with single mothers having the most elastic labor supply.
+Returns to labour market experience are found to be substantial but only for full-time employment,
+and especially for women with more than basic formal education. For those with lower education the
+welfare programs are shown to have substantial insurance value. Based on the model marginal increases
+to tax credits are preferred to equally costly increases in income support and to tax cuts, except by
+those in the highest education group.},
+  keywords  = {life-cycle},
+  publisher = {Wiley Online Library},
+}
+
+@Article{adda2016career,
+  author   = {Adda, J{\'e}r{\^o}me and Dustmann, Christian and Stevens, Katrien},
+  title    = {The career costs of children},
+  year     = {2016},
+  abstract = {We estimate a dynamic life-cycle model of labor supply, fertility and savings, incorporating occupational choices, with specific wage paths and skill atrophy that vary over the career. This allows us to understand the trade-off between occupational choice and desired fertility, as well as the sorting both into the labor market and across occupations. We quantify the life-cycle career costs associated with children, how they decompose into loss of skills during interruptions, lost earnings opportunities and selection into more child-friendly occupations. We analyze the long-run effects of policies that encourage fertility and show that they are considerably smaller than short-run effects.},
+}
+
+@Article{eckstein2011dynamic,
+  author    = {Eckstein, Zvi and Lifshitz, Osnat},
+  title     = {Dynamic female labor supply},
+  journal   = {Econometrica},
+  year      = {2011},
+  volume    = {79},
+  number    = {6},
+  pages     = {1675--1726},
+  abstract  = {The increase in female employment and participation rates is one of the most dramatic changes to have taken place in the economy during the last century. However, while the employment rate of married women more than doubled during the last 50 years, that of unmarried women remained almost constant. To empirically analyze these trends, we estimate a female dynamic labor supply model using an extended version of Eckstein and Wolpin (1989) to compare the various explanations in the literature for the observed trends. This dynamic model provides a much better fit to the life-cycle employment pattern than a static version of the model and a standard static reduced form model (Heckman (1979)). The main finding using the dynamic model is that the rise in education levels accounts for about 33 percent of the increase in female employment, and the rise in wages and narrowing of the gender wage gap account for another 20 percent, while about 40 percent remains unexplained by observed household characteristics. We show that this unexplained portion can be empirically attributed to cohort-specific changes in preferences or the costs of child-rearing and household maintenance. Finally, the decline in fertility and the increase in divorce rates account for only a small share of the increase in female employment rates.},
+  keywords  = {life-cycle},
+  publisher = {Wiley Online Library},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

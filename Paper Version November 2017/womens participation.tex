@@ -1,0 +1,46 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tabulary}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{natbib}
+\usepackage{csquotes}
+\let\oldenquote\enquote
+\renewcommand{\enquote}[1]{{\itshape\oldenquote{#1}}}
+\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+%\singlespacing
+\onehalfspacing
+
+
+\author{Stefan K\"uhn\thanks{International Labour Organisation, kuehn@ilo.org}  and Sheena Yoon\thanks{International Labour Organisation, yoons@ilo.org}}
+\title{Women's participation in the labour market around the world: life-cycle effects of preferences, gender norms and socio-economic constraints\thanks{The information and views set out in this paper are those of the authors and do not necessarily reflect the official opinion of the ILO.}}
+\date{\today\\
+	\texttt{Working Paper}}
+
+
+\begin{document}
+\maketitle
+\abstract{This paper relates the probability for women to participate in the labour market to a complex framework of fundamental drivers, covering socio-economic constraints, gender role conformity and personal preferences. The validity of the framework is verified empirically using the 2016 Gallup World Poll, a rich survey dataset covering individuals in 127 countries with an identical questionnaire. Importantly, the dataset includes new indicators of personal preferences, societal gender norms and socio-economic constraints developed by the International Labour Organization (ILO) and administered in the survey to specifically capture the three driving influences on women's participation. First, by using the age dimension of the dataset the paper finds that the fundamental drivers differ in their impact depending on the life-cycle situation women are in. Second, with the help of the unique cross-country dimension of the dataset the paper establishes that their impact also differs by country characteristics. 
+}
+
+\input{Sections/sec_introduction}
+\input{Sections/sec_framework}
+\input{Sections/sec_data}
+\input{Sections/sec_methodology}
+\input{Sections/sec_results}
+%\input{Sections/sec_robustness}
+\input{Sections/sec_conclusion}
+
+\bibliographystyle{chicago}
+\bibliography{ref_women_participation}
+
+\appendix
+\input{Sections/sec_appendix}
+
+\end{document}

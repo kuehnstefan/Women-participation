@@ -1,0 +1,333 @@
+---------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  I:\COMMON\Stefan\Papers\Womans participation\Econometric Analysis\Gallup_contrast.log
+  log type:  text
+ opened on:   2 Oct 2017, 18:09:45
+
+. 
+end of do-file
+
+. do "C:\Users\yoons\AppData\Local\Temp\STD0f000000.tmp"
+
+. contrast rb1.smartcat#r.agecat#(educ), effects
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+---------------------------------------------------------------------------------------------------
+                                                                |         df           F        P>F
+----------------------------------------------------------------+----------------------------------
+                                           smartcat#agecat#educ |
+      (Low gap vs Developing country) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          2       14.77     0.0000
+(Low gap vs Developing country) (Age 55+ vs Age 25-54) (joint)  |          2        5.32     0.0049
+     (High gap vs Developing country) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          2       17.00     0.0000
+       (High gap vs Developing country) (Age 55+ vs Age 25-54)  |
+                                                       (joint)  |          2        4.57     0.0104
+                                                         Joint  |          8        8.88     0.0000
+                                                         Design |      56636
+---------------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+--------------------------------------------------------------------------------------------------
+                                 |   Contrast   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------------------------+----------------------------------------------------------------
+            smartcat#agecat#educ |
+(Low gap vs Developing country)  |
+       (Age 15-24 vs Age 25-54)  |
+  (Secondary education vs base)  |   .5031181    .103166     4.88   0.000     .3009122    .7053241
+(Low gap vs Developing country)  |
+       (Age 15-24 vs Age 25-54)  |
+   (Tertiary education vs base)  |   1.146591   .3518966     3.26   0.001     .4568714     1.83631
+(Low gap vs Developing country)  |
+         (Age 55+ vs Age 25-54)  |
+  (Secondary education vs base)  |  -.6285307   .2199733    -2.86   0.004     -1.05968   -.1973817
+(Low gap vs Developing country)  |
+         (Age 55+ vs Age 25-54)  |
+   (Tertiary education vs base)  |   .7599401    .540717     1.41   0.160    -.2998684    1.819749
+                      (High gap  |
+                             vs  |
+            Developing country)  |
+       (Age 15-24 vs Age 25-54)  |
+  (Secondary education vs base)  |   .6052496   .1097053     5.52   0.000     .3902266    .8202725
+                      (High gap  |
+                             vs  |
+            Developing country)  |
+       (Age 15-24 vs Age 25-54)  |
+   (Tertiary education vs base)  |   1.054744   .3624878     2.91   0.004     .3442656    1.765222
+                      (High gap  |
+                             vs  |
+            Developing country)  |
+         (Age 55+ vs Age 25-54)  |
+  (Secondary education vs base)  |  -.6623014   .2260579    -2.93   0.003    -1.105376   -.2192267
+                      (High gap  |
+                             vs  |
+            Developing country)  |
+         (Age 55+ vs Age 25-54)  |
+   (Tertiary education vs base)  |   .3077833   .5485138     0.56   0.575    -.7673071    1.382874
+--------------------------------------------------------------------------------------------------
+
+. contrast rb2.smartcat#r.agecat#(educ), effects
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+---------------------------------------------------------------------------------------------------
+                                                                |         df           F        P>F
+----------------------------------------------------------------+----------------------------------
+                                           smartcat#agecat#educ |
+      (Developing country vs Low gap) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          2       14.77     0.0000
+(Developing country vs Low gap) (Age 55+ vs Age 25-54) (joint)  |          2        5.32     0.0049
+        (High gap vs Low gap) (Age 15-24 vs Age 25-54) (joint)  |          2        1.15     0.3164
+          (High gap vs Low gap) (Age 55+ vs Age 25-54) (joint)  |          2        6.63     0.0013
+                                                         Joint  |          8        8.88     0.0000
+                                                         Design |      56636
+---------------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+--------------------------------------------------------------------------------------------------
+                                 |   Contrast   Std. Err.      t    P>|t|     [95% Conf. Interval]
+---------------------------------+----------------------------------------------------------------
+            smartcat#agecat#educ |
+(Developing country vs Low gap)  |
+       (Age 15-24 vs Age 25-54)  |
+  (Secondary education vs base)  |  -.5031181    .103166    -4.88   0.000    -.7053241   -.3009122
+(Developing country vs Low gap)  |
+       (Age 15-24 vs Age 25-54)  |
+   (Tertiary education vs base)  |  -1.146591   .3518966    -3.26   0.001     -1.83631   -.4568714
+(Developing country vs Low gap)  |
+         (Age 55+ vs Age 25-54)  |
+  (Secondary education vs base)  |   .6285307   .2199733     2.86   0.004     .1973817     1.05968
+(Developing country vs Low gap)  |
+         (Age 55+ vs Age 25-54)  |
+   (Tertiary education vs base)  |  -.7599401    .540717    -1.41   0.160    -1.819749    .2998684
+          (High gap vs Low gap)  |
+       (Age 15-24 vs Age 25-54)  |
+  (Secondary education vs base)  |   .1021314   .1011988     1.01   0.313    -.0962188    .3004816
+          (High gap vs Low gap)  |
+       (Age 15-24 vs Age 25-54)  |
+   (Tertiary education vs base)  |   -.091847    .172228    -0.53   0.594    -.4294149    .2457209
+          (High gap vs Low gap)  |
+         (Age 55+ vs Age 25-54)  |
+  (Secondary education vs base)  |  -.0337708   .0931626    -0.36   0.717    -.2163701    .1488285
+          (High gap vs Low gap)  |
+         (Age 55+ vs Age 25-54)  |
+   (Tertiary education vs base)  |  -.4521569   .1329495    -3.40   0.001    -.7127387    -.191575
+--------------------------------------------------------------------------------------------------
+
+. contrast rb3.smartcat#r.agecat#(educ), effects
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+----------------------------------------------------------------------------------------------
+                                                           |         df           F        P>F
+-----------------------------------------------------------+----------------------------------
+                                      smartcat#agecat#educ |
+(Developing country vs High gap) (Age 15-24 vs Age 25-54)  |
+                                                  (joint)  |          2       17.00     0.0000
+  (Developing country vs High gap) (Age 55+ vs Age 25-54)  |
+                                                  (joint)  |          2        4.57     0.0104
+   (Low gap vs High gap) (Age 15-24 vs Age 25-54) (joint)  |          2        1.15     0.3164
+     (Low gap vs High gap) (Age 55+ vs Age 25-54) (joint)  |          2        6.63     0.0013
+                                                    Joint  |          8        8.88     0.0000
+                                                    Design |      56636
+----------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+------------------------------------------------------------------------------------------------
+                               |   Contrast   Std. Err.      t    P>|t|     [95% Conf. Interval]
+-------------------------------+----------------------------------------------------------------
+          smartcat#agecat#educ |
+          (Developing country  |
+                           vs  |
+                    High gap)  |
+     (Age 15-24 vs Age 25-54)  |
+(Secondary education vs base)  |  -.6052496   .1097053    -5.52   0.000    -.8202725   -.3902266
+          (Developing country  |
+                           vs  |
+                    High gap)  |
+     (Age 15-24 vs Age 25-54)  |
+ (Tertiary education vs base)  |  -1.054744   .3624878    -2.91   0.004    -1.765222   -.3442656
+          (Developing country  |
+                           vs  |
+                    High gap)  |
+       (Age 55+ vs Age 25-54)  |
+(Secondary education vs base)  |   .6623014   .2260579     2.93   0.003     .2192267    1.105376
+          (Developing country  |
+                           vs  |
+                    High gap)  |
+       (Age 55+ vs Age 25-54)  |
+ (Tertiary education vs base)  |  -.3077833   .5485138    -0.56   0.575    -1.382874    .7673071
+        (Low gap vs High gap)  |
+     (Age 15-24 vs Age 25-54)  |
+(Secondary education vs base)  |  -.1021314   .1011988    -1.01   0.313    -.3004816    .0962188
+        (Low gap vs High gap)  |
+     (Age 15-24 vs Age 25-54)  |
+ (Tertiary education vs base)  |    .091847    .172228     0.53   0.594    -.2457209    .4294149
+        (Low gap vs High gap)  |
+       (Age 55+ vs Age 25-54)  |
+(Secondary education vs base)  |   .0337708   .0931626     0.36   0.717    -.1488285    .2163701
+        (Low gap vs High gap)  |
+       (Age 55+ vs Age 25-54)  |
+ (Tertiary education vs base)  |   .4521569   .1329495     3.40   0.001      .191575    .7127387
+------------------------------------------------------------------------------------------------
+
+. 
+. contrast rb1.smartcat#r.agecat#(married) 
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+---------------------------------------------------------------------------------------------------
+                                                                |         df           F        P>F
+----------------------------------------------------------------+----------------------------------
+                                        smartcat#agecat#married |
+      (Low gap vs Developing country) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          1        0.93     0.3343
+(Low gap vs Developing country) (Age 55+ vs Age 25-54) (joint)  |          1        0.64     0.4232
+     (High gap vs Developing country) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          1        3.09     0.0789
+       (High gap vs Developing country) (Age 55+ vs Age 25-54)  |
+                                                       (joint)  |          1        0.71     0.4004
+                                                         Joint  |          4        2.87     0.0216
+                                                         Design |      56636
+---------------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+. contrast rb2.smartcat#r.agecat#(married) 
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+---------------------------------------------------------------------------------------------------
+                                                                |         df           F        P>F
+----------------------------------------------------------------+----------------------------------
+                                        smartcat#agecat#married |
+      (Developing country vs Low gap) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          1        0.93     0.3343
+(Developing country vs Low gap) (Age 55+ vs Age 25-54) (joint)  |          1        0.64     0.4232
+        (High gap vs Low gap) (Age 15-24 vs Age 25-54) (joint)  |          1        8.38     0.0038
+          (High gap vs Low gap) (Age 55+ vs Age 25-54) (joint)  |          1        5.97     0.0146
+                                                         Joint  |          4        2.87     0.0216
+                                                         Design |      56636
+---------------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+. contrast rb3.smartcat#r.agecat#(married) 
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+----------------------------------------------------------------------------------------------
+                                                           |         df           F        P>F
+-----------------------------------------------------------+----------------------------------
+                                   smartcat#agecat#married |
+(Developing country vs High gap) (Age 15-24 vs Age 25-54)  |
+                                                  (joint)  |          1        3.09     0.0789
+  (Developing country vs High gap) (Age 55+ vs Age 25-54)  |
+                                                  (joint)  |          1        0.71     0.4004
+   (Low gap vs High gap) (Age 15-24 vs Age 25-54) (joint)  |          1        8.38     0.0038
+     (Low gap vs High gap) (Age 55+ vs Age 25-54) (joint)  |          1        5.97     0.0146
+                                                    Joint  |          4        2.87     0.0216
+                                                    Design |      56636
+----------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+. 
+. contrast rb1.smartcat#r.agecat#(kids) 
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+---------------------------------------------------------------------------------------------------
+                                                                |         df           F        P>F
+----------------------------------------------------------------+----------------------------------
+                                          smartcat#agecat#kids1 |
+      (Low gap vs Developing country) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          1        0.47     0.4918
+(Low gap vs Developing country) (Age 55+ vs Age 25-54) (joint)  |          1        3.60     0.0579
+     (High gap vs Developing country) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          1        0.34     0.5612
+       (High gap vs Developing country) (Age 55+ vs Age 25-54)  |
+                                                       (joint)  |          1        4.95     0.0261
+                                                         Joint  |          4        2.47     0.0429
+                                                         Design |      56636
+---------------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+. contrast rb2.smartcat#r.agecat#(kids) 
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+---------------------------------------------------------------------------------------------------
+                                                                |         df           F        P>F
+----------------------------------------------------------------+----------------------------------
+                                          smartcat#agecat#kids1 |
+      (Developing country vs Low gap) (Age 15-24 vs Age 25-54)  |
+                                                       (joint)  |          1        0.47     0.4918
+(Developing country vs Low gap) (Age 55+ vs Age 25-54) (joint)  |          1        3.60     0.0579
+        (High gap vs Low gap) (Age 15-24 vs Age 25-54) (joint)  |          1        3.42     0.0646
+          (High gap vs Low gap) (Age 55+ vs Age 25-54) (joint)  |          1        0.53     0.4653
+                                                         Joint  |          4        2.47     0.0429
+                                                         Design |      56636
+---------------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+. contrast rb3.smartcat#r.agecat#(kids) 
+
+Contrasts of marginal linear predictions
+
+                                                Design df         =     56,636
+
+Margins      : asbalanced
+
+----------------------------------------------------------------------------------------------
+                                                           |         df           F        P>F
+-----------------------------------------------------------+----------------------------------
+                                     smartcat#agecat#kids1 |
+(Developing country vs High gap) (Age 15-24 vs Age 25-54)  |
+                                                  (joint)  |          1        0.34     0.5612
+  (Developing country vs High gap) (Age 55+ vs Age 25-54)  |
+                                                  (joint)  |          1        4.95     0.0261
+   (Low gap vs High gap) (Age 15-24 vs Age 25-54) (joint)  |          1        3.42     0.0646
+     (Low gap vs High gap) (Age 55+ vs Age 25-54) (joint)  |          1        0.53     0.4653
+                                                    Joint  |          4        2.47     0.0429
+                                                    Design |      56636
+----------------------------------------------------------------------------------------------
+Note: F statistics are adjusted for the survey design.
+
+. 
+. log close
+      name:  <unnamed>
+       log:  I:\COMMON\Stefan\Papers\Womans participation\Econometric Analysis\Gallup_contrast.log
+  log type:  text
+ closed on:   2 Oct 2017, 18:10:01
+---------------------------------------------------------------------------------------------------
